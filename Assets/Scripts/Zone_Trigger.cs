@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
+
 
 public class Zone_Trigger : MonoBehaviour
 {
@@ -10,9 +12,12 @@ public class Zone_Trigger : MonoBehaviour
     PuzzelScript puzzelScript;
 
 
+
+
     // Start is called before the first frame update
     void Start()
     {
+
         /*rend = GetComponent<Renderer>();
         rend.enabled = false;   //Turns the visibility of the object off
 
@@ -27,7 +32,6 @@ public class Zone_Trigger : MonoBehaviour
     {
         puzzelScript = pie.GetComponent<PuzzelScript>();
     }
-
 
     void OnTriggerEnter(Collider other)
     {
