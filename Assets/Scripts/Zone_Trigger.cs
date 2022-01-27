@@ -40,6 +40,7 @@ public class Zone_Trigger : MonoBehaviour
         {
             print(gameObject.tag + ", Right piece");
             Destroy(gameObject);
+            puzzelScript.RightPiece(other.gameObject);
         }
         else
         {
@@ -49,3 +50,5 @@ public class Zone_Trigger : MonoBehaviour
 
     }
 }
+
+
