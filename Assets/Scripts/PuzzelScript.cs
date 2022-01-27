@@ -52,4 +52,18 @@ public class PuzzelScript : MonoBehaviour
         int CurrentPiece = Pieces.IndexOf(PieceName);
         Pieces[CurrentPiece].transform.position = PieceName.transform.position; // Updates the current position of the piece
     }
+
+    public void RightPiece(GameObject PieceName)
+    {
+        hand.Invoke();
+        int ConnectPiece = Pieces.IndexOf(PieceName) - 1; // Gets index from puzzle piece befor in list
+        Vector3 temp = new Vector3(0.01f, 0, 0);           // Temporary vector that we will add to the new vector
+        PieceName.transform.position = Pieces[ConnectPiece].transform.position;
+        PieceName.transform.position += temp;             // Puzzle piece gets new position
+        PieceName.transform.rotation = rot[ConnectPiece];
+
+        int CurrentPiece = Pieces.IndexOf(PieceName);
+        Pieces[CurrentPiece].transform.position = PieceName.transform.position;
+    }
+
 }
