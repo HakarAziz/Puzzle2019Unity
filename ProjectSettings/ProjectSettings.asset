@@ -125,7 +125,9 @@ PlayerSettings:
     16:9: 1
     Others: 1
   bundleVersion: 0.1
-  preloadedAssets: []
+  preloadedAssets:
+  - {fileID: 2348538359212154479, guid: cb40d61db31799145aceafc615d03770, type: 2}
+  - {fileID: 1679279523862856835, guid: 0c99d6fc62d96c6459494c82600ffec7, type: 2}
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1
@@ -158,7 +160,7 @@ PlayerSettings:
       protectedContext: 0
       v2Signing: 1
     enable360StereoCapture: 0
-  isWsaHolographicRemotingEnabled: 1
+  isWsaHolographicRemotingEnabled: 0
   enableFrameTimingStats: 0
   useHDRDisplay: 0
   D3DHDRBitDepth: 0
@@ -328,10 +330,10 @@ PlayerSettings:
     m_Automatic: 1
   m_BuildTargetVRSettings:
   - m_BuildTarget: Standalone
-    m_Enabled: 1
+    m_Enabled: 0
     m_Devices: []
   - m_BuildTarget: Windows Store Apps
-    m_Enabled: 1
+    m_Enabled: 0
     m_Devices: []
   openGLRequireES31: 0
   openGLRequireES31AEP: 0
@@ -593,11 +595,11 @@ PlayerSettings:
   m_MobileRenderingPath: 1
   metroPackageName: Template_3D
   metroPackageVersion: 
-  metroCertificatePath: 
+  metroCertificatePath: Assets\WSATestCertificate.pfx
   metroCertificatePassword: 
-  metroCertificateSubject: 
-  metroCertificateIssuer: 
-  metroCertificateNotAfter: 0000000000000000
+  metroCertificateSubject: DefaultCompany
+  metroCertificateIssuer: DefaultCompany
+  metroCertificateNotAfter: 00a509487e32d901
   metroApplicationDescription: Template_3D
   wsaImages: {}
   metroTileShortName: 

@@ -2,6 +2,20 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+//using UnityEngine.SceneManagement;
+
+/*public class SceneChanger: MonoBehaviour
+{
+    public void Scene1()
+    {
+        SceneManager.LoadScene("Puzzel_run");
+    }
+    public void Scene2()
+    {
+        SceneManager.LoadScene("test1");
+    }
+
+}*/
 
 public class PuzzelScript : MonoBehaviour
 {

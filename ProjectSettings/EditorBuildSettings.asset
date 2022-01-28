@@ -4,7 +4,15 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Puzzel_run.unity
+    guid: d0d745d0f3afcf844a722680edb87d17
+  - enabled: 1
+    path: Assets/Scenes/StartScene.unity
+    guid: c8410078e49568c4c9091456cfc204b8
   m_configObjects:
+    Unity.XR.WindowsMR.Settings: {fileID: 11400000, guid: cb40d61db31799145aceafc615d03770,
+      type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 0c99d6fc62d96c6459494c82600ffec7,
       type: 2}
