@@ -156,6 +156,7 @@ MonoBehaviour:
   rend: {fileID: 0}
   puzzle_piece: {fileID: 0}
   pie: {fileID: 1696914591}
+  zones: {fileID: 551502562}
 --- !u!65 &178102329
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -265,6 +266,7 @@ MonoBehaviour:
   rend: {fileID: 0}
   puzzle_piece: {fileID: 0}
   pie: {fileID: 1696914591}
+  zones: {fileID: 551502562}
 --- !u!65 &255694287
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1067,6 +1069,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 551502563}
+  - component: {fileID: 551502564}
   m_Layer: 0
   m_Name: Zones
   m_TagString: Untagged
@@ -1097,6 +1100,19 @@ Transform:
   m_Father: {fileID: 616701332}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &551502564
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 551502562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a7b121455c99594dae0cc289c570543, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Zones: []
 --- !u!1 &616701331
 GameObject:
   m_ObjectHideFlags: 0
@@ -1577,6 +1593,7 @@ MonoBehaviour:
   rend: {fileID: 0}
   puzzle_piece: {fileID: 0}
   pie: {fileID: 1696914591}
+  zones: {fileID: 551502562}
 --- !u!65 &788643756
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2238,6 +2255,7 @@ MonoBehaviour:
   rend: {fileID: 0}
   puzzle_piece: {fileID: 0}
   pie: {fileID: 1696914591}
+  zones: {fileID: 551502562}
 --- !u!65 &1327473113
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2347,6 +2365,7 @@ MonoBehaviour:
   rend: {fileID: 0}
   puzzle_piece: {fileID: 0}
   pie: {fileID: 1696914591}
+  zones: {fileID: 551502562}
 --- !u!65 &1340502860
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2450,7 +2469,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1461139321}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.1773, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 526781927}
@@ -2783,6 +2802,7 @@ MonoBehaviour:
   rend: {fileID: 0}
   puzzle_piece: {fileID: 0}
   pie: {fileID: 1696914591}
+  zones: {fileID: 551502562}
 --- !u!65 &1590455804
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2892,6 +2912,7 @@ MonoBehaviour:
   rend: {fileID: 0}
   puzzle_piece: {fileID: 0}
   pie: {fileID: 1696914591}
+  zones: {fileID: 551502562}
 --- !u!65 &1657988938
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3159,6 +3180,7 @@ MonoBehaviour:
   rend: {fileID: 0}
   puzzle_piece: {fileID: 0}
   pie: {fileID: 1696914591}
+  zones: {fileID: 551502562}
 --- !u!65 &1707468277
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3452,6 +3474,7 @@ MonoBehaviour:
   rend: {fileID: 0}
   puzzle_piece: {fileID: 0}
   pie: {fileID: 1696914591}
+  zones: {fileID: 551502562}
 --- !u!65 &2037221479
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3539,7 +3562,7 @@ GameObject:
   - component: {fileID: 2145281751}
   - component: {fileID: 2145281750}
   m_Layer: 0
-  m_Name: cube
+  m_Name: Playmat
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
