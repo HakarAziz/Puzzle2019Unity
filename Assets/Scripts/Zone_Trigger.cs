@@ -12,7 +12,6 @@ public class Zone_Trigger : MonoBehaviour
     public GameObject zones;
     PuzzelScript puzzelScript;
     InOrder inorder;
-    int order = 2;
 
 
 
@@ -37,7 +36,6 @@ public class Zone_Trigger : MonoBehaviour
     {
         puzzelScript = pie.GetComponent<PuzzelScript>();
         inorder = zones.GetComponent<InOrder>();
-        //zones_trigger = zones.GetComponent<Zone_Trigger>();
 
 
 
@@ -59,14 +57,12 @@ public class Zone_Trigger : MonoBehaviour
             
 
 
-            inorder.ActivateZones(order);
+            inorder.ActivateZones();
 
            
 
             puzzelScript.RightPiece(other.gameObject);
 
-            order++;
-            print(order);
         }
         else
         {

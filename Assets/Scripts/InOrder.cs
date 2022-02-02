@@ -5,7 +5,7 @@ using UnityEngine;
 public class InOrder : MonoBehaviour
 {
 
-
+    int r = 2;
     public List<GameObject> Zones = new List<GameObject>();
 
     // Start is called before the first frame update
@@ -46,13 +46,17 @@ public class InOrder : MonoBehaviour
     }
 
 
-    public void ActivateZones(int i)
+    public void ActivateZones()
     {
+        if (r == 10)
+        {
+            Zones[9].SetActive(false);
+        }
+        else
+        {
+            Zones[r].SetActive(true);
+            r++;
+        }
 
-        Zones[i].SetActive(true);
-        //Zones[i-1].SetActive(false);
-
-        //i++;
-        //print(i);
     }
 }

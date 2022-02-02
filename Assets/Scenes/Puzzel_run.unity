@@ -225,7 +225,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 178102327}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -0.137, y: 0.008, z: -1.016}
+  m_LocalPosition: {x: -0.11741, y: 0.008, z: -1.016}
   m_LocalScale: {x: 0.01, y: 0.05, z: 0.006}
   m_Children: []
   m_Father: {fileID: 551502563}
@@ -335,7 +335,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 255694285}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -0.159, y: 0.008, z: -1.016}
+  m_LocalPosition: {x: -0.14856, y: 0.008, z: -1.016}
   m_LocalScale: {x: 0.01, y: 0.05, z: 0.006}
   m_Children: []
   m_Father: {fileID: 551502563}
@@ -2048,9 +2048,6 @@ GameObject:
   - component: {fileID: 1046565897}
   - component: {fileID: 1046565896}
   - component: {fileID: 1046565895}
-  - component: {fileID: 1046565894}
-  - component: {fileID: 1046565893}
-  - component: {fileID: 1046565892}
   - component: {fileID: 1046565898}
   m_Layer: 0
   m_Name: Piece 1
@@ -2073,77 +2070,6 @@ Transform:
   m_Father: {fileID: 1696914592}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 90, y: 180, z: 0}
---- !u!114 &1046565892
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1046565890}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5afd5316c63705643b3daba5a6e923bd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ShowTetherWhenManipulating: 0
-  IsBoundsHandles: 0
---- !u!114 &1046565893
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1046565890}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 181cd563a8349c34ea8978b0bc8d9c7e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hostTransform: {fileID: 1046565891}
-  manipulationType: 3
-  twoHandedManipulationType: 7
-  allowFarManipulation: 1
-  useForcesForNearManipulation: 0
-  oneHandRotationModeNear: 1
-  oneHandRotationModeFar: 1
-  releaseBehavior: 3
-  transformSmoothingLogicType:
-    reference: Microsoft.MixedReality.Toolkit.Utilities.DefaultTransformSmoothingLogic,
-      Microsoft.MixedReality.Toolkit.SDK
-  smoothingFar: 1
-  smoothingNear: 1
-  moveLerpTime: 0.001
-  rotateLerpTime: 0.001
-  scaleLerpTime: 0.001
-  enableConstraints: 1
-  constraintsManager: {fileID: 1046565894}
-  elasticsManager: {fileID: 0}
-  onManipulationStarted:
-    m_PersistentCalls:
-      m_Calls: []
-  onManipulationEnded:
-    m_PersistentCalls:
-      m_Calls: []
-  onHoverEntered:
-    m_PersistentCalls:
-      m_Calls: []
-  onHoverExited:
-    m_PersistentCalls:
-      m_Calls: []
---- !u!114 &1046565894
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1046565890}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a98de877dee5fc341b4eb59dfdab266c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  autoConstraintSelection: 1
-  selectedConstraints: []
 --- !u!65 &1046565895
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2324,7 +2250,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1327473111}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -0.148, y: 0.008, z: -1.016}
+  m_LocalPosition: {x: -0.13425, y: 0.008, z: -1.016}
   m_LocalScale: {x: 0.01, y: 0.05, z: 0.006}
   m_Children: []
   m_Father: {fileID: 551502563}
@@ -2434,7 +2360,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1340502858}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -0.185, y: 0.008, z: -1.016}
+  m_LocalPosition: {x: -0.1845, y: 0.008, z: -1.016}
   m_LocalScale: {x: 0.01, y: 0.05, z: 0.006}
   m_Children: []
   m_Father: {fileID: 551502563}
@@ -2871,7 +2797,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1590455802}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -0.17, y: 0.008, z: -1.016}
+  m_LocalPosition: {x: -0.16076, y: 0.008, z: -1.016}
   m_LocalScale: {x: 0.01, y: 0.05, z: 0.006}
   m_Children: []
   m_Father: {fileID: 551502563}
@@ -3249,7 +3175,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1707468275}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -0.174, y: 0.008, z: -1.016}
+  m_LocalPosition: {x: -0.17285, y: 0.008, z: -1.016}
   m_LocalScale: {x: 0.01, y: 0.05, z: 0.006}
   m_Children: []
   m_Father: {fileID: 551502563}
