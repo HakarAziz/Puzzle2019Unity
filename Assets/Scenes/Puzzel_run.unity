@@ -758,6 +758,75 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f498511f3f4466b43abdc7da742a4db7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &102003093 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8839117086356187597, guid: e969038e4d67d9b498de2ef538969506,
+    type: 3}
+  m_PrefabInstance: {fileID: 102003083}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &102003094 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5201862997053450832, guid: e969038e4d67d9b498de2ef538969506,
+    type: 3}
+  m_PrefabInstance: {fileID: 102003083}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &102003095
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 102003093}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 181cd563a8349c34ea8978b0bc8d9c7e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hostTransform: {fileID: 102003094}
+  manipulationType: 3
+  twoHandedManipulationType: 3
+  allowFarManipulation: 1
+  useForcesForNearManipulation: 0
+  oneHandRotationModeNear: 1
+  oneHandRotationModeFar: 1
+  releaseBehavior: 3
+  transformSmoothingLogicType:
+    reference: Microsoft.MixedReality.Toolkit.Utilities.DefaultTransformSmoothingLogic,
+      Microsoft.MixedReality.Toolkit.SDK
+  smoothingFar: 1
+  smoothingNear: 1
+  moveLerpTime: 0.001
+  rotateLerpTime: 0.001
+  scaleLerpTime: 0.001
+  enableConstraints: 1
+  constraintsManager: {fileID: 102003096}
+  elasticsManager: {fileID: 0}
+  onManipulationStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  onManipulationEnded:
+    m_PersistentCalls:
+      m_Calls: []
+  onHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  onHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &102003096
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 102003093}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a98de877dee5fc341b4eb59dfdab266c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  autoConstraintSelection: 1
+  selectedConstraints: []
 --- !u!1 &178102327
 GameObject:
   m_ObjectHideFlags: 0
@@ -4244,6 +4313,7 @@ GameObject:
   - component: {fileID: 2145281752}
   - component: {fileID: 2145281751}
   - component: {fileID: 2145281750}
+  - component: {fileID: 2145281754}
   m_Layer: 0
   m_Name: cube
   m_TagString: Untagged
@@ -4325,3 +4395,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!54 &2145281754
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2145281749}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
