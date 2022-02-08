@@ -11,20 +11,9 @@ public class Zone_Trigger : MonoBehaviour
     public GameObject pie;
     PuzzelScript puzzelScript;
 
-
-
-
     // Start is called before the first frame update
     void Start()
     {
-
-        /*rend = GetComponent<Renderer>();
-        rend.enabled = false;   //Turns the visibility of the object off
-
-
-
-        puzzle_piece = GameObject.Find("Puzzle_0");  //Returns the gameobject in the scene
-        */
     }
 
     // Update is called once per frame

@@ -26,7 +26,7 @@ public class Trigger_Tutorial : MonoBehaviour
         {
 
             print("Dom krockade!!!!");
-            tutorialScript.Collading();
+            tutorialScript.Colliding();
         }
         else 
         { 
