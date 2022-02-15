@@ -41,25 +41,21 @@ public class Zone_Trigger : MonoBehaviour
 
     }
 
-    
-
     void OnTriggerEnter(Collider other)
     {
 
-        
-
         if (other.tag == gameObject.tag)  //Checks if the correct piece is in the correct spot and deletes the zone
         {
-            
+
             print(gameObject.tag + ", Right piece");
             //Destroy(gameObject);
             gameObject.SetActive(false);
-            
+
 
 
             inorder.ActivateZones();
 
-           
+
 
             puzzelScript.RightPiece(other.gameObject);
 
@@ -69,7 +65,6 @@ public class Zone_Trigger : MonoBehaviour
             print("Wrong Piece");
             puzzelScript.ChangePos(other.gameObject);
         }
-        
     }
 }
 

@@ -8,17 +8,70 @@ public class PuzzelScript : MonoBehaviour
     public List<GameObject> Pieces = new List<GameObject>();
     public List<Vector3> StartPos = new List<Vector3>();
     public List<Quaternion> Rot = new List<Quaternion>();
-
+    public float intensity;
+    public float ColorIntensity;
+    GameObject Child;
+    public Material hej;
+    public Color color;
     [Header("Disable handgrab")]
     public UnityEvent hand;
 
     void Start()
     {
+        
+        intensity = 1.0F;
+        ColorIntensity = 0F;
         AddPieceInformation();
+        Child = Pieces[7].transform.GetChild(0).gameObject;
+        hej = Child.GetComponent<Renderer>().material;
+        
+        StartCoroutine(SubtleMove());
+        //StartCoroutine(SubtleColor());
     }
 
     void Update()
     {
+    }
+    
+    IEnumerator SubtleMove()
+    {
+        while (true)
+        {
+            if (intensity == 1.0F)
+            {
+                intensity = intensity + 0.001F;
+                yield return new WaitForSeconds(5);
+            }
+            else
+            {
+                Pieces[5].transform.position = intensity * StartPos[5];
+                yield return new WaitForSeconds(1);
+                Pieces[5].transform.position = StartPos[5];
+                intensity = intensity + 0.001F;
+                yield return new WaitForSeconds(3);
+            }
+        }
+    }
+
+    IEnumerator SubtleColor()
+    {
+        while (true)
+        {
+            if (intensity == 1.0F)
+            {
+                intensity = intensity + 0.001F;
+                yield return new WaitForSeconds(5);
+            }
+            else
+            {
+                color = hej.color;
+                color.a = ColorIntensity;
+                hej.color = color;
+                yield return new WaitForSeconds(1);
+                ColorIntensity = ColorIntensity + 0.1F;
+                yield return new WaitForSeconds(3);
+            }
+        }
     }
 
     public void AddPieceInformation()

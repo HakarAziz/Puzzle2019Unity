@@ -157,6 +157,7 @@ MonoBehaviour:
   puzzle_piece: {fileID: 0}
   pie: {fileID: 1696914591}
   zones: {fileID: 551502562}
+  qwerty: 1
 --- !u!65 &178102329
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -267,6 +268,7 @@ MonoBehaviour:
   puzzle_piece: {fileID: 0}
   pie: {fileID: 1696914591}
   zones: {fileID: 551502562}
+  qwerty: 1
 --- !u!65 &255694287
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1225,14 +1227,25 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 300646475}
+  constraintsManager: {fileID: 622252076}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
       m_Calls: []
   onManipulationEnded:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2037221478}
+        m_MethodName: kalle
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onHoverEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -1594,6 +1607,7 @@ MonoBehaviour:
   puzzle_piece: {fileID: 0}
   pie: {fileID: 1696914591}
   zones: {fileID: 551502562}
+  qwerty: 1
 --- !u!65 &788643756
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2182,6 +2196,7 @@ MonoBehaviour:
   puzzle_piece: {fileID: 0}
   pie: {fileID: 1696914591}
   zones: {fileID: 551502562}
+  qwerty: 1
 --- !u!65 &1327473113
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2292,6 +2307,7 @@ MonoBehaviour:
   puzzle_piece: {fileID: 0}
   pie: {fileID: 1696914591}
   zones: {fileID: 551502562}
+  qwerty: 1
 --- !u!65 &1340502860
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3366,6 +3382,7 @@ MonoBehaviour:
   puzzle_piece: {fileID: 0}
   pie: {fileID: 1696914591}
   zones: {fileID: 551502562}
+  qwerty: 1
 --- !u!65 &1590455804
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3476,6 +3493,7 @@ MonoBehaviour:
   puzzle_piece: {fileID: 0}
   pie: {fileID: 1696914591}
   zones: {fileID: 551502562}
+  qwerty: 1
 --- !u!65 &1657988938
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3606,6 +3624,10 @@ MonoBehaviour:
   Pieces: []
   StartPos: []
   Rot: []
+  intensity: 0
+  ColorIntensity: 0
+  hej: {fileID: 0}
+  color: {r: 0, g: 0, b: 0, a: 0}
   hand:
     m_PersistentCalls:
       m_Calls:
@@ -3744,6 +3766,7 @@ MonoBehaviour:
   puzzle_piece: {fileID: 0}
   pie: {fileID: 1696914591}
   zones: {fileID: 551502562}
+  qwerty: 1
 --- !u!65 &1707468277
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4038,6 +4061,7 @@ MonoBehaviour:
   puzzle_piece: {fileID: 0}
   pie: {fileID: 1696914591}
   zones: {fileID: 551502562}
+  qwerty: 1
 --- !u!65 &2037221479
 BoxCollider:
   m_ObjectHideFlags: 0

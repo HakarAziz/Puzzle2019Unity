@@ -8,7 +8,6 @@ public class Trigger_Tutorial : MonoBehaviour
     // Start is called before the first frame update
     public GameObject pie;
     Tutorial tutorialScript;
-
     void Start()
     {
         
@@ -24,7 +23,6 @@ public class Trigger_Tutorial : MonoBehaviour
     {
         if (Contact.tag == gameObject.tag) 
         {
-
             print("Dom krockade!!!!");
             tutorialScript.Colliding();
         }
@@ -32,8 +30,6 @@ public class Trigger_Tutorial : MonoBehaviour
         { 
         
         }
-
-
 
     }
 }
