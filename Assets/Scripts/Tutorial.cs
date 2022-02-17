@@ -5,12 +5,13 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Events;
 using System.Timers;
+using TMPro;
 
 
 public class Tutorial : MonoBehaviour
 {
 
-    public Text UpdateText;
+    public TMP_Text UpdateText;
     public int counter;
     public bool asdf = false;
 
