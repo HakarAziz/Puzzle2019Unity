@@ -38,7 +38,6 @@ public class Zone_Trigger : MonoBehaviour
         inorder = zones.GetComponent<InOrder>();
 
 
-
     }
 
     

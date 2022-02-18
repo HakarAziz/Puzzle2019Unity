@@ -9,17 +9,68 @@ public class PuzzelScript : MonoBehaviour
     public List<Vector3> StartPos = new List<Vector3>();
     public List<Quaternion> Rot = new List<Quaternion>();
 
+<<<<<<< Updated upstream
+=======
+    public float intensity;
+    public float ColorIntensity;
+    public GameObject aukfwaduawhdhawidhiuwa;
+    public Material hej;
+    public Color color;
+
+    SubtleHints subtlehint;
+    GameObject Child;
+
+>>>>>>> Stashed changes
     [Header("Disable handgrab")]
     public UnityEvent hand;
+
+    [Header("Disable Piece")]
+    public UnityEvent pcs;
 
     void Start()
     {
         AddPieceInformation();
+<<<<<<< Updated upstream
+=======
+        Child = Pieces[7].transform.GetChild(0).gameObject;
+        hej = Child.GetComponent<Renderer>().material;
+        
+
+        //StartCoroutine(SubtleColor());
+>>>>>>> Stashed changes
     }
 
     void Update()
     {
+        subtlehint = aukfwaduawhdhawidhiuwa.GetComponent<SubtleHints>();
     }
+<<<<<<< Updated upstream
+=======
+    
+    
+
+    IEnumerator SubtleColor()
+    {
+        while (true)
+        {
+            if (intensity == 1.0F)
+            {
+                intensity = intensity + 0.001F;
+                yield return new WaitForSeconds(5);
+            }
+            else
+            {
+                color = hej.color;
+                color.a = ColorIntensity;
+                hej.color = color;
+                yield return new WaitForSeconds(1);
+                ColorIntensity = ColorIntensity + 0.1F;
+                yield return new WaitForSeconds(3);
+            }
+        }
+    }
+>>>>>>> Stashed changes
+
 
     public void AddPieceInformation()
     {
@@ -51,6 +102,8 @@ public class PuzzelScript : MonoBehaviour
 
         int CurrentPiece = Pieces.IndexOf(PieceName);
         Pieces[CurrentPiece].transform.position = PieceName.transform.position; // Updates the current position of the piece
+        subtlehint.CounterIncrease();
+        pcs.Invoke();
     }
 
 
