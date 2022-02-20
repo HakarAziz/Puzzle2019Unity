@@ -29,8 +29,8 @@ public class PuzzelScript : MonoBehaviour
     void Start()
     {
         AddPieceInformation();
-        Child = Pieces[7].transform.GetChild(0).gameObject;
-        hej = Child.GetComponent<Renderer>().material;
+        //Child = Pieces[7].transform.GetChild(0).gameObject;
+        //hej = Child.GetComponent<Renderer>().material;
 
 
         //StartCoroutine(SubtleColor());

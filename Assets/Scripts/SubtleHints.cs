@@ -34,6 +34,7 @@ public class SubtleHints : MonoBehaviour
     }
     void Update()
     {
+        
     }
     public void CounterIncrease()
     {
@@ -44,16 +45,19 @@ public class SubtleHints : MonoBehaviour
     public void NotOnPiece() //Checks when the hand is not on the puzzle piece (may be swapped to eyetracking)
     {
         Seeing = true;
+        
         StartCoroutine(SubtleMove());
     }
 
     public void OnPiece() //Checks when the hand is on the Piece
     {
         Seeing = false;
+        //StartPos2[counter] = Pieces2[counter].transform.position;
     }
 
     IEnumerator SubtleMove() //The SubtleMove method, moves the piece a little bit after some seconds
     {
+        yield return new WaitForSeconds(5);
         while (Seeing == true)
         {
             if (ChangePosVariable == 1.0F) //starts the subtlehint after 3 seconds

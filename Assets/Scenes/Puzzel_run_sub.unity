@@ -627,7 +627,7 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 300646475}
+  constraintsManager: {fileID: 367952787}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
@@ -788,7 +788,7 @@ Transform:
   m_LocalScale: {x: 0.01, y: 0.05, z: 0.006}
   m_Children: []
   m_Father: {fileID: 1696914592}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 90, y: 180, z: 0}
 --- !u!114 &491247962
 MonoBehaviour:
@@ -833,7 +833,7 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 300646475}
+  constraintsManager: {fileID: 491247964}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
@@ -1291,7 +1291,7 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 300646475}
+  constraintsManager: {fileID: 622252076}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
@@ -1474,7 +1474,7 @@ Transform:
   m_LocalScale: {x: 0.01, y: 0.05, z: 0.006}
   m_Children: []
   m_Father: {fileID: 1696914592}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 90, y: 180, z: 0}
 --- !u!114 &715633147
 MonoBehaviour:
@@ -1519,7 +1519,7 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 300646475}
+  constraintsManager: {fileID: 715633149}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
@@ -1880,7 +1880,7 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 300646475}
+  constraintsManager: {fileID: 801405937}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
@@ -2039,10 +2039,9 @@ Transform:
   m_LocalRotation: {x: 0, y: 0.7071068, z: -0.7071068, w: 0}
   m_LocalPosition: {x: -0.1, y: 0.01, z: -0.9}
   m_LocalScale: {x: 0.01, y: 0.05, z: 0.006}
-  m_Children:
-  - {fileID: 2045593186}
+  m_Children: []
   m_Father: {fileID: 1696914592}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 90, y: 180, z: 0}
 --- !u!114 &887681150
 MonoBehaviour:
@@ -2087,7 +2086,7 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 300646475}
+  constraintsManager: {fileID: 887681152}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
@@ -2721,7 +2720,7 @@ Transform:
   m_LocalScale: {x: 0.01, y: 0.05, z: 0.006}
   m_Children: []
   m_Father: {fileID: 1696914592}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 90, y: 180, z: 0}
 --- !u!114 &1531371193
 MonoBehaviour:
@@ -3860,6 +3859,7 @@ Transform:
   - {fileID: 367952784}
   - {fileID: 2013805057}
   - {fileID: 801405934}
+  - {fileID: 2045593186}
   - {fileID: 887681149}
   - {fileID: 715633146}
   - {fileID: 491247961}
@@ -4462,12 +4462,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2045593185}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.03, y: -0.297, z: -0.3}
-  m_LocalScale: {x: 0.5, y: 0.05, z: 0.5}
+  m_LocalRotation: {x: -0, y: 0.7071068, z: -0.7071068, w: 0}
+  m_LocalPosition: {x: -0.099700004, y: 0.24820006, z: -0.88499993}
+  m_LocalScale: {x: 0.0050000004, y: 0.0025, z: 0.0030000003}
   m_Children: []
-  m_Father: {fileID: 887681149}
-  m_RootOrder: 0
+  m_Father: {fileID: 1696914592}
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &2045593187
 BoxCollider:
