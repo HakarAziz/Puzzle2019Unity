@@ -357,6 +357,7 @@ GameObject:
   - component: {fileID: 300646474}
   - component: {fileID: 300646473}
   - component: {fileID: 300646479}
+  - component: {fileID: 300646480}
   m_Layer: 0
   m_Name: Piece 3
   m_TagString: Place_2
@@ -547,6 +548,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &300646480
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 300646471}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d72f1fea79a00f438e47949397bbf62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &367952783
 GameObject:
   m_ObjectHideFlags: 0
@@ -563,6 +576,7 @@ GameObject:
   - component: {fileID: 367952786}
   - component: {fileID: 367952785}
   - component: {fileID: 367952791}
+  - component: {fileID: 367952792}
   m_Layer: 0
   m_Name: Piece 4
   m_TagString: Place_3
@@ -627,7 +641,7 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 367952787}
+  constraintsManager: {fileID: 300646475}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
@@ -753,6 +767,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &367952792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 367952783}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d72f1fea79a00f438e47949397bbf62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &491247960
 GameObject:
   m_ObjectHideFlags: 0
@@ -769,6 +795,7 @@ GameObject:
   - component: {fileID: 491247963}
   - component: {fileID: 491247962}
   - component: {fileID: 491247968}
+  - component: {fileID: 491247969}
   m_Layer: 0
   m_Name: Piece 9
   m_TagString: Place_8
@@ -788,7 +815,7 @@ Transform:
   m_LocalScale: {x: 0.01, y: 0.05, z: 0.006}
   m_Children: []
   m_Father: {fileID: 1696914592}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 90, y: 180, z: 0}
 --- !u!114 &491247962
 MonoBehaviour:
@@ -833,7 +860,7 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 491247964}
+  constraintsManager: {fileID: 300646475}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
@@ -959,6 +986,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &491247969
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 491247960}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d72f1fea79a00f438e47949397bbf62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &523233288
 GameObject:
   m_ObjectHideFlags: 0
@@ -1227,6 +1266,7 @@ GameObject:
   - component: {fileID: 622252075}
   - component: {fileID: 622252074}
   - component: {fileID: 622252080}
+  - component: {fileID: 622252081}
   m_Layer: 0
   m_Name: Piece 2
   m_TagString: Place_1
@@ -1296,8 +1336,8 @@ MonoBehaviour:
   onManipulationStarted:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1696914594}
-        m_MethodName: OnPiece
+      - m_Target: {fileID: 622252081}
+        m_MethodName: ttt
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1321,17 +1361,6 @@ MonoBehaviour:
   onManipulationEnded:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1696914594}
-        m_MethodName: NotOnPiece
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 1696914594}
         m_MethodName: NotOnPiece
         m_Mode: 1
@@ -1439,6 +1468,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &622252081
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 622252072}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d72f1fea79a00f438e47949397bbf62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &715633145
 GameObject:
   m_ObjectHideFlags: 0
@@ -1455,6 +1496,7 @@ GameObject:
   - component: {fileID: 715633148}
   - component: {fileID: 715633147}
   - component: {fileID: 715633153}
+  - component: {fileID: 715633154}
   m_Layer: 0
   m_Name: Piece 8
   m_TagString: Place_7
@@ -1474,7 +1516,7 @@ Transform:
   m_LocalScale: {x: 0.01, y: 0.05, z: 0.006}
   m_Children: []
   m_Father: {fileID: 1696914592}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 90, y: 180, z: 0}
 --- !u!114 &715633147
 MonoBehaviour:
@@ -1519,7 +1561,7 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 715633149}
+  constraintsManager: {fileID: 300646475}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
@@ -1645,6 +1687,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &715633154
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 715633145}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d72f1fea79a00f438e47949397bbf62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &753681296
 GameObject:
   m_ObjectHideFlags: 0
@@ -1816,6 +1870,7 @@ GameObject:
   - component: {fileID: 801405936}
   - component: {fileID: 801405935}
   - component: {fileID: 801405941}
+  - component: {fileID: 801405942}
   m_Layer: 0
   m_Name: Piece 6
   m_TagString: Place_5
@@ -1880,7 +1935,7 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 801405937}
+  constraintsManager: {fileID: 300646475}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
@@ -2006,6 +2061,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &801405942
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 801405933}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d72f1fea79a00f438e47949397bbf62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &887681148
 GameObject:
   m_ObjectHideFlags: 0
@@ -2022,6 +2089,7 @@ GameObject:
   - component: {fileID: 887681151}
   - component: {fileID: 887681150}
   - component: {fileID: 887681156}
+  - component: {fileID: 887681157}
   m_Layer: 0
   m_Name: Piece 7
   m_TagString: Place_6
@@ -2041,7 +2109,7 @@ Transform:
   m_LocalScale: {x: 0.01, y: 0.05, z: 0.006}
   m_Children: []
   m_Father: {fileID: 1696914592}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 90, y: 180, z: 0}
 --- !u!114 &887681150
 MonoBehaviour:
@@ -2086,7 +2154,7 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 887681152}
+  constraintsManager: {fileID: 300646475}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
@@ -2212,6 +2280,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &887681157
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 887681148}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d72f1fea79a00f438e47949397bbf62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1046565890
 GameObject:
   m_ObjectHideFlags: 0
@@ -2701,6 +2781,7 @@ GameObject:
   - component: {fileID: 1531371194}
   - component: {fileID: 1531371193}
   - component: {fileID: 1531371199}
+  - component: {fileID: 1531371200}
   m_Layer: 0
   m_Name: Piece 10
   m_TagString: Place_9
@@ -2720,7 +2801,7 @@ Transform:
   m_LocalScale: {x: 0.01, y: 0.05, z: 0.006}
   m_Children: []
   m_Father: {fileID: 1696914592}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 90, y: 180, z: 0}
 --- !u!114 &1531371193
 MonoBehaviour:
@@ -2770,6 +2851,17 @@ MonoBehaviour:
   onManipulationStarted:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 1531371200}
+        m_MethodName: ttt
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 1696914594}
         m_MethodName: OnPiece
         m_Mode: 1
@@ -2891,6 +2983,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1531371200
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1531371191}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d72f1fea79a00f438e47949397bbf62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1568689307
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3859,7 +3963,6 @@ Transform:
   - {fileID: 367952784}
   - {fileID: 2013805057}
   - {fileID: 801405934}
-  - {fileID: 2045593186}
   - {fileID: 887681149}
   - {fileID: 715633146}
   - {fileID: 491247961}
@@ -4005,6 +4108,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Seeing: 0
+  test: 0
   ChangePosVariable: 0
   counter: 0
   Pieces2: []
@@ -4136,6 +4240,7 @@ GameObject:
   - component: {fileID: 2013805059}
   - component: {fileID: 2013805058}
   - component: {fileID: 2013805064}
+  - component: {fileID: 2013805065}
   m_Layer: 0
   m_Name: Piece 5
   m_TagString: Place_4
@@ -4326,6 +4431,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &2013805065
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2013805056}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d72f1fea79a00f438e47949397bbf62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2037221477
 GameObject:
   m_ObjectHideFlags: 0
@@ -4436,99 +4553,6 @@ Transform:
   m_Father: {fileID: 551502563}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
---- !u!1 &2045593185
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2045593186}
-  - component: {fileID: 2045593189}
-  - component: {fileID: 2045593188}
-  - component: {fileID: 2045593187}
-  m_Layer: 0
-  m_Name: Cube
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2045593186
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2045593185}
-  m_LocalRotation: {x: -0, y: 0.7071068, z: -0.7071068, w: 0}
-  m_LocalPosition: {x: -0.099700004, y: 0.24820006, z: -0.88499993}
-  m_LocalScale: {x: 0.0050000004, y: 0.0025, z: 0.0030000003}
-  m_Children: []
-  m_Father: {fileID: 1696914592}
-  m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &2045593187
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2045593185}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!23 &2045593188
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2045593185}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: f65b36588b1915445b557999719494e9, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
---- !u!33 &2045593189
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2045593185}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &2145281749
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,10 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class SubtleHints : MonoBehaviour
 {
     public bool Seeing;
+    public bool test;
     public float ChangePosVariable;
     public int counter;
 
@@ -13,13 +15,17 @@ public class SubtleHints : MonoBehaviour
     public List<Quaternion> Rot2 = new List<Quaternion>();
 
     PuzzelScript puzzelScript; //imports the puzzelScript
+    aaa AAA; 
+
 
 
     // Start is called before the first frame update
     IEnumerator Start()
     {
+        
         counter = 2;
         Seeing = true;
+        test = false;
         ChangePosVariable = 1.0F;
         puzzelScript = GetComponent<PuzzelScript>(); //Gets component from the PuzzelScript
         yield return new WaitForEndOfFrame();
@@ -30,33 +36,57 @@ public class SubtleHints : MonoBehaviour
             Pieces2.Add(s);
 
         }
-        StartCoroutine(SubtleMove());//Start SubtleMove and executes it under several frames.
+        StartCoroutine(SubtleMove()); //Start SubtleMove and executes it under several frames.
     }
     void Update()
     {
-        
+        AAA = GetComponent<aaa>();
     }
     public void CounterIncrease()
     {
         counter++;
         ChangePosVariable = 1.0F;
     }
+    public bool qwerty()
+    {
+        
+        if (aaa.sss==Pieces2[counter])
+        {
+            test = true;
+            return test;
+        }
+        else
+        {
+            test = false;
+            return test;
+        }
+    }
 
     public void NotOnPiece() //Checks when the hand is not on the puzzle piece (may be swapped to eyetracking)
     {
+        //print("borjan av  notonpiece");
+        test = false;
         Seeing = true;
-        
         StartCoroutine(SubtleMove());
+        //print("slutet av not on piece");
+
     }
 
     public void OnPiece() //Checks when the hand is on the Piece
     {
-        Seeing = false;
-        //StartPos2[counter] = Pieces2[counter].transform.position;
+        qwerty();
+        
+        if (test == true)
+        {
+            //print("före false");
+            Seeing = false;
+            //print("efter false");
+        }
     }
 
     IEnumerator SubtleMove() //The SubtleMove method, moves the piece a little bit after some seconds
     {
+        StartPos2[counter] = Pieces2[counter].transform.position;
         yield return new WaitForSeconds(5);
         while (Seeing == true)
         {
