@@ -157,6 +157,20 @@ MonoBehaviour:
   puzzle_piece: {fileID: 0}
   pie: {fileID: 1696914591}
   zones: {fileID: 551502562}
+  pcs:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1531371194}
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!65 &178102329
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -267,6 +281,20 @@ MonoBehaviour:
   puzzle_piece: {fileID: 0}
   pie: {fileID: 1696914591}
   zones: {fileID: 551502562}
+  pcs:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 715633148}
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!65 &255694287
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -427,6 +455,17 @@ MonoBehaviour:
   onManipulationStarted:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 300646480}
+        m_MethodName: CheckPiece
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 1696914594}
         m_MethodName: OnPiece
         m_Mode: 1
@@ -641,11 +680,22 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 300646475}
+  constraintsManager: {fileID: 367952787}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 367952792}
+        m_MethodName: CheckPiece
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 1696914594}
         m_MethodName: OnPiece
         m_Mode: 1
@@ -860,11 +910,22 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 300646475}
+  constraintsManager: {fileID: 491247964}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 491247969}
+        m_MethodName: CheckPiece
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 1696914594}
         m_MethodName: OnPiece
         m_Mode: 1
@@ -1337,7 +1398,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 622252081}
-        m_MethodName: ttt
+        m_MethodName: CheckPiece
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1561,11 +1622,22 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 300646475}
+  constraintsManager: {fileID: 715633149}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 715633154}
+        m_MethodName: CheckPiece
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 1696914594}
         m_MethodName: OnPiece
         m_Mode: 1
@@ -1780,6 +1852,20 @@ MonoBehaviour:
   puzzle_piece: {fileID: 0}
   pie: {fileID: 1696914591}
   zones: {fileID: 551502562}
+  pcs:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 367952786}
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!65 &788643756
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1935,11 +2021,22 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 300646475}
+  constraintsManager: {fileID: 801405937}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 801405942}
+        m_MethodName: CheckPiece
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 1696914594}
         m_MethodName: OnPiece
         m_Mode: 1
@@ -2154,11 +2251,22 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 300646475}
+  constraintsManager: {fileID: 887681152}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 887681157}
+        m_MethodName: CheckPiece
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 1696914594}
         m_MethodName: OnPiece
         m_Mode: 1
@@ -2438,6 +2546,20 @@ MonoBehaviour:
   puzzle_piece: {fileID: 0}
   pie: {fileID: 1696914591}
   zones: {fileID: 551502562}
+  pcs:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 491247963}
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!65 &1327473113
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2548,6 +2670,20 @@ MonoBehaviour:
   puzzle_piece: {fileID: 0}
   pie: {fileID: 1696914591}
   zones: {fileID: 551502562}
+  pcs:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2013805059}
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!65 &1340502860
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2852,7 +2988,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1531371200}
-        m_MethodName: ttt
+        m_MethodName: CheckPiece
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3744,6 +3880,20 @@ MonoBehaviour:
   puzzle_piece: {fileID: 0}
   pie: {fileID: 1696914591}
   zones: {fileID: 551502562}
+  pcs:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 887681151}
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!65 &1590455804
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3854,6 +4004,20 @@ MonoBehaviour:
   puzzle_piece: {fileID: 0}
   pie: {fileID: 1696914591}
   zones: {fileID: 551502562}
+  pcs:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 300646474}
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!65 &1657988938
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4092,9 +4256,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  pcs:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!114 &1696914594
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4150,6 +4311,20 @@ MonoBehaviour:
   puzzle_piece: {fileID: 0}
   pie: {fileID: 1696914591}
   zones: {fileID: 551502562}
+  pcs:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 801405936}
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!65 &1707468277
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4305,11 +4480,22 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 300646475}
+  constraintsManager: {fileID: 2013805060}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 2013805065}
+        m_MethodName: CheckPiece
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 1696914594}
         m_MethodName: OnPiece
         m_Mode: 1
@@ -4479,6 +4665,31 @@ MonoBehaviour:
   puzzle_piece: {fileID: 0}
   pie: {fileID: 1696914591}
   zones: {fileID: 551502562}
+  pcs:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1046565895}
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 622252075}
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!65 &2037221479
 BoxCollider:
   m_ObjectHideFlags: 0

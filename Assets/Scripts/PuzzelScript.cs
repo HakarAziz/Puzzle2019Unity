@@ -23,8 +23,7 @@ public class PuzzelScript : MonoBehaviour
     [Header("Disable handgrab")]
     public UnityEvent hand;
 
-    [Header("Disable Piece")]
-    public UnityEvent pcs;
+
 
     void Start()
     {
@@ -98,7 +97,6 @@ public class PuzzelScript : MonoBehaviour
         int CurrentPiece = Pieces.IndexOf(PieceName);
         Pieces[CurrentPiece].transform.position = PieceName.transform.position; // Updates the current position of the piece
         subtlehint.CounterIncrease();
-        pcs.Invoke();
     }
 
 

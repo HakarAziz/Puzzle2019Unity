@@ -15,7 +15,7 @@ public class SubtleHints : MonoBehaviour
     public List<Quaternion> Rot2 = new List<Quaternion>();
 
     PuzzelScript puzzelScript; //imports the puzzelScript
-    aaa AAA; 
+    CheckPieceScript checkscript; 
 
 
 
@@ -40,52 +40,50 @@ public class SubtleHints : MonoBehaviour
     }
     void Update()
     {
-        AAA = GetComponent<aaa>();
+        //checkscript = GetComponent<CheckPieceScript>();
     }
     public void CounterIncrease()
     {
         counter++;
         ChangePosVariable = 1.0F;
     }
-    public bool qwerty()
-    {
-        
-        if (aaa.sss==Pieces2[counter])
-        {
-            test = true;
-            return test;
-        }
-        else
-        {
-            test = false;
-            return test;
-        }
-    }
 
     public void NotOnPiece() //Checks when the hand is not on the puzzle piece (may be swapped to eyetracking)
     {
-        //print("borjan av  notonpiece");
-        test = false;
-        Seeing = true;
-        StartCoroutine(SubtleMove());
-        //print("slutet av not on piece");
+        if (CheckPieceScript.ThisPiece == Pieces2[counter])
+        {
+            StopAllCoroutines(); //Stops all Coroutines before starting a new one
+            StartCoroutine(SubtleMove());
+            test = false;
+            Seeing = true;
 
+        }
+        else
+        {
+            print("fin print sats");
+        }
     }
 
     public void OnPiece() //Checks when the hand is on the Piece
     {
-        qwerty();
-        
-        if (test == true)
+
+        if (CheckPieceScript.ThisPiece == Pieces2[counter]) 
         {
-            //print("före false");
             Seeing = false;
-            //print("efter false");
+            
         }
+        else
+        {
+            Seeing = true;
+            
+        }
+
+
     }
 
     IEnumerator SubtleMove() //The SubtleMove method, moves the piece a little bit after some seconds
     {
+
         StartPos2[counter] = Pieces2[counter].transform.position;
         yield return new WaitForSeconds(5);
         while (Seeing == true)
@@ -122,6 +120,5 @@ public class SubtleHints : MonoBehaviour
             }
 
         }
-
     }
 }

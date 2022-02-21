@@ -13,7 +13,8 @@ public class Zone_Trigger : MonoBehaviour
     PuzzelScript puzzelScript;
     InOrder inorder;
 
-
+    [Header("Disable Piece")]
+    public UnityEvent pcs;
 
 
     // Start is called before the first frame update
@@ -58,6 +59,7 @@ public class Zone_Trigger : MonoBehaviour
 
 
             puzzelScript.RightPiece(other.gameObject);
+            pcs.Invoke();
 
         }
         else
