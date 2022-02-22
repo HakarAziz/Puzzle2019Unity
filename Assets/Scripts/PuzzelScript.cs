@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 
 public class PuzzelScript : MonoBehaviour
 {
@@ -38,7 +39,11 @@ public class PuzzelScript : MonoBehaviour
 
     void Update()
     {
-        subtlehint = aukfwaduawhdhawidhiuwa.GetComponent<SubtleHints>();
+        if(SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Puzzel_run_sub"))
+        {
+            subtlehint = aukfwaduawhdhawidhiuwa.GetComponent<SubtleHints>();
+        }
+        //subtlehint = aukfwaduawhdhawidhiuwa.GetComponent<SubtleHints>();
     }
 
 
@@ -96,7 +101,11 @@ public class PuzzelScript : MonoBehaviour
 
         int CurrentPiece = Pieces.IndexOf(PieceName);
         Pieces[CurrentPiece].transform.position = PieceName.transform.position; // Updates the current position of the piece
-        subtlehint.CounterIncrease();
+        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Puzzel_run_sub"))
+        {
+            subtlehint.CounterIncrease();
+        }
+        
     }
 
 
