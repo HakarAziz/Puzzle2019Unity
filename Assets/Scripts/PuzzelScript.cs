@@ -2,56 +2,52 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 
 public class PuzzelScript : MonoBehaviour
 {
     public List<GameObject> Pieces = new List<GameObject>();
     public List<Vector3> StartPos = new List<Vector3>();
     public List<Quaternion> Rot = new List<Quaternion>();
+
+
     public float intensity;
     public float ColorIntensity;
-    GameObject Child;
+    public GameObject aukfwaduawhdhawidhiuwa;
     public Material hej;
     public Color color;
+
+    SubtleHints subtlehint;
+    GameObject Child;
+
+
     [Header("Disable handgrab")]
     public UnityEvent hand;
 
+
+
     void Start()
     {
-        
-        intensity = 1.0F;
-        ColorIntensity = 0F;
         AddPieceInformation();
-        Child = Pieces[7].transform.GetChild(0).gameObject;
-        hej = Child.GetComponent<Renderer>().material;
-        
-        StartCoroutine(SubtleMove());
+        //Child = Pieces[7].transform.GetChild(0).gameObject;
+        //hej = Child.GetComponent<Renderer>().material;
+
+
         //StartCoroutine(SubtleColor());
+
     }
 
     void Update()
     {
-    }
-    
-    IEnumerator SubtleMove()
-    {
-        while (true)
+        if(SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Puzzel_run_sub"))
         {
-            if (intensity == 1.0F)
-            {
-                intensity = intensity + 0.001F;
-                yield return new WaitForSeconds(5);
-            }
-            else
-            {
-                Pieces[5].transform.position = intensity * StartPos[5];
-                yield return new WaitForSeconds(1);
-                Pieces[5].transform.position = StartPos[5];
-                intensity = intensity + 0.001F;
-                yield return new WaitForSeconds(3);
-            }
+            subtlehint = aukfwaduawhdhawidhiuwa.GetComponent<SubtleHints>();
         }
+        //subtlehint = aukfwaduawhdhawidhiuwa.GetComponent<SubtleHints>();
     }
+
+
+
 
     IEnumerator SubtleColor()
     {
@@ -73,6 +69,7 @@ public class PuzzelScript : MonoBehaviour
             }
         }
     }
+
 
     public void AddPieceInformation()
     {
@@ -104,6 +101,11 @@ public class PuzzelScript : MonoBehaviour
 
         int CurrentPiece = Pieces.IndexOf(PieceName);
         Pieces[CurrentPiece].transform.position = PieceName.transform.position; // Updates the current position of the piece
+        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Puzzel_run_sub"))
+        {
+            subtlehint.CounterIncrease();
+        }
+        
     }
 
 
