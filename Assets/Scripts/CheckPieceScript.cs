@@ -6,11 +6,22 @@ public class CheckPieceScript : MonoBehaviour
 {
 
     public static GameObject ThisPiece;
+    public static bool grab_object;
 
 
     public void CheckPiece()
     {
         ThisPiece = this.gameObject;
         //print(sss + "ffiejfijeijfi");
+    }
+
+    public void Grab()
+    {
+        grab_object = true;
+    }
+
+    public void Release()
+    {
+        grab_object = false;
     }
 }

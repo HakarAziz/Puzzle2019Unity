@@ -47,8 +47,6 @@ public class PuzzelScript : MonoBehaviour
     }
 
 
-
-
     IEnumerator SubtleColor()
     {
         while (true)
@@ -92,7 +90,7 @@ public class PuzzelScript : MonoBehaviour
 
     public void RightPiece(GameObject PieceName)
     {
-        hand.Invoke();
+        //hand.Invoke();
         int ConnectPiece = Pieces.IndexOf(PieceName) - 1; // Gets index from puzzle piece befor in list
         Vector3 temp = new Vector3(0.01f, 0, 0);           // Temporary vector that we will add to the new vector
         PieceName.transform.position = Pieces[ConnectPiece].transform.position;
