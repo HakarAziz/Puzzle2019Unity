@@ -77,6 +77,7 @@ public class PuzzelScript : MonoBehaviour
         foreach (Transform child in Children)
         {
             Pieces.Add(child.gameObject);
+            print(child);
             StartPos.Add(child.transform.position);
             Rot.Add(child.transform.rotation);
         }
