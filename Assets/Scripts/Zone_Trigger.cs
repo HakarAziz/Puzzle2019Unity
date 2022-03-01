@@ -11,7 +11,9 @@ public class Zone_Trigger : MonoBehaviour
     public GameObject pie;
     public GameObject zones;
     PuzzelScript puzzelScript;
+    CheckPieceScript checkPieceScript;
     InOrder inorder;
+    
 
     [Header("Disable Piece")]
     public UnityEvent pcs;
@@ -20,16 +22,6 @@ public class Zone_Trigger : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
-        /*rend = GetComponent<Renderer>();
-        rend.enabled = false;   //Turns the visibility of the object off
-        */
-
-
-     
-
-        
-
     }
 
     // Update is called once per frame
@@ -37,36 +29,33 @@ public class Zone_Trigger : MonoBehaviour
     {
         puzzelScript = pie.GetComponent<PuzzelScript>();
         inorder = zones.GetComponent<InOrder>();
-
-
-
     }
 
     void OnTriggerEnter(Collider other)
     {
-
-        if (other.tag == gameObject.tag)  //Checks if the correct piece is in the correct spot and deletes the zone
+        print("före");
+        if (CheckPieceScript.grab_object == false)
         {
+            print("efter");
+            if (other.tag == gameObject.tag)  //Checks if the correct piece is in the correct spot and deletes the zone
+            {
+                print("hej igen");
+                puzzelScript.RightPiece(other.gameObject);
+                gameObject.SetActive(false);
+                inorder.ActivateZones();
+                pcs.Invoke();
 
-            print(gameObject.tag + ", Right piece");
-            //Destroy(gameObject);
-            gameObject.SetActive(false);
-
-
-
-            inorder.ActivateZones();
-
-
-
-            puzzelScript.RightPiece(other.gameObject);
-            pcs.Invoke();
-
+            }
+            else
+            {
+                puzzelScript.ChangePos(other.gameObject);
+            }
         }
         else
         {
-            print("Wrong Piece");
-            puzzelScript.ChangePos(other.gameObject);
+            print("Hoppas att det funkar");
         }
+
     }
 }
 
