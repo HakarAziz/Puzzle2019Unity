@@ -225,26 +225,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 45950993}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 47dc548aecc839e47a111073961eb5d1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Seeing: 0
-  test: 0
-  ChangePosVariable: 0
-  counter: 0
-  Pieces2: []
-  StartPos2: []
-  Rot2: []
---- !u!114 &45950996
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 45950993}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 07113fffc4b3a94499a24f6b8910858e, type: 3}
+  m_Script: {fileID: 11500000, guid: 931e90a1efb914a42b80282bfe5611b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Pieces: []
@@ -257,106 +238,122 @@ MonoBehaviour:
   color: {r: 0, g: 0, b: 0, a: 0}
   hand:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 285481929}
-        m_MethodName: ForceEndManipulation
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 599974337}
-        m_MethodName: ForceEndManipulation
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 692469853}
-        m_MethodName: ForceEndManipulation
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 931511888}
-        m_MethodName: ForceEndManipulation
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 434074348}
-        m_MethodName: ForceEndManipulation
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1523221665}
-        m_MethodName: ForceEndManipulation
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 717142850}
-        m_MethodName: ForceEndManipulation
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1843191897}
-        m_MethodName: ForceEndManipulation
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1024694225}
-        m_MethodName: ForceEndManipulation
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
+--- !u!114 &45950996
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 45950993}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc7691aa322b68646851cf99d2409965, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Seeing: 0
+  test: 0
+  ChangePosVariable: 0
+  ColorIntensity: 0
+  counter: 0
+  hej: {fileID: 0}
+  color: {r: 0, g: 0, b: 0, a: 0}
+  counter2: 0
+  Pieces2: []
+--- !u!1 &90095137
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 90095138}
+  - component: {fileID: 90095141}
+  - component: {fileID: 90095140}
+  - component: {fileID: 90095139}
+  m_Layer: 0
+  m_Name: Plane
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &90095138
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 90095137}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -0, z: -15.2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 285481925}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!64 &90095139
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 90095137}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &90095140
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 90095137}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 42456c39b492f794c9cb5a06ec3461d8, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &90095141
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 90095137}
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &109188138
 GameObject:
   m_ObjectHideFlags: 0
@@ -554,8 +551,8 @@ GameObject:
   - component: {fileID: 235668867}
   - component: {fileID: 235668871}
   - component: {fileID: 235668870}
-  - component: {fileID: 235668869}
   - component: {fileID: 235668868}
+  - component: {fileID: 235668869}
   m_Layer: 0
   m_Name: zone 1
   m_TagString: Place_1
@@ -586,7 +583,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 235668866}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e09ef2fc27a03e7479acd44842bf89ab, type: 3}
+  m_Script: {fileID: 11500000, guid: ac48bdd626b0bf64db36725a6cb0a136, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   rend: {fileID: 0}
@@ -595,29 +592,7 @@ MonoBehaviour:
   zones: {fileID: 3567209}
   pcs:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1739299907}
-        m_MethodName: set_enabled
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 285481929}
-        m_MethodName: set_enabled
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!65 &235668869
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -712,7 +687,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0.7071068, z: -0.7071068, w: 0}
   m_LocalPosition: {x: -0.1173, y: 0.01, z: -0.9}
   m_LocalScale: {x: 0.01, y: 0.05, z: 0.006}
-  m_Children: []
+  m_Children:
+  - {fileID: 90095138}
   m_Father: {fileID: 45950994}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 90, y: 180, z: 0}
@@ -803,17 +779,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 45950995}
-        m_MethodName: OnPiece
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 285481926}
         m_MethodName: Grab
         m_Mode: 1
@@ -828,17 +793,6 @@ MonoBehaviour:
   onManipulationEnded:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 45950995}
-        m_MethodName: NotOnPiece
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 285481926}
         m_MethodName: Release
         m_Mode: 1
@@ -1787,8 +1741,8 @@ GameObject:
   - component: {fileID: 399812541}
   - component: {fileID: 399812545}
   - component: {fileID: 399812544}
-  - component: {fileID: 399812543}
   - component: {fileID: 399812542}
+  - component: {fileID: 399812543}
   m_Layer: 0
   m_Name: zone 2
   m_TagString: Place_2
@@ -1819,7 +1773,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 399812540}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e09ef2fc27a03e7479acd44842bf89ab, type: 3}
+  m_Script: {fileID: 11500000, guid: ac48bdd626b0bf64db36725a6cb0a136, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   rend: {fileID: 0}
@@ -1828,18 +1782,7 @@ MonoBehaviour:
   zones: {fileID: 3567209}
   pcs:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 599974337}
-        m_MethodName: set_enabled
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!65 &399812543
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2025,17 +1968,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 45950995}
-        m_MethodName: OnPiece
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 434074345}
         m_MethodName: Grab
         m_Mode: 1
@@ -2050,17 +1982,6 @@ MonoBehaviour:
   onManipulationEnded:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 45950995}
-        m_MethodName: NotOnPiece
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 434074345}
         m_MethodName: Release
         m_Mode: 1
@@ -2163,8 +2084,8 @@ GameObject:
   - component: {fileID: 477162636}
   - component: {fileID: 477162640}
   - component: {fileID: 477162639}
-  - component: {fileID: 477162638}
   - component: {fileID: 477162637}
+  - component: {fileID: 477162638}
   m_Layer: 0
   m_Name: zone 8
   m_TagString: Place_8
@@ -2195,7 +2116,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 477162635}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e09ef2fc27a03e7479acd44842bf89ab, type: 3}
+  m_Script: {fileID: 11500000, guid: ac48bdd626b0bf64db36725a6cb0a136, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   rend: {fileID: 0}
@@ -2204,18 +2125,7 @@ MonoBehaviour:
   zones: {fileID: 3567209}
   pcs:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1843191897}
-        m_MethodName: set_enabled
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!65 &477162638
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2568,17 +2478,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 45950995}
-        m_MethodName: OnPiece
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 599974334}
         m_MethodName: Grab
         m_Mode: 1
@@ -2593,17 +2492,6 @@ MonoBehaviour:
   onManipulationEnded:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 45950995}
-        m_MethodName: NotOnPiece
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 599974334}
         m_MethodName: Release
         m_Mode: 1
@@ -2739,8 +2627,8 @@ GameObject:
   - component: {fileID: 665579451}
   - component: {fileID: 665579455}
   - component: {fileID: 665579454}
-  - component: {fileID: 665579453}
   - component: {fileID: 665579452}
+  - component: {fileID: 665579453}
   m_Layer: 0
   m_Name: zone 7
   m_TagString: Place_7
@@ -2771,7 +2659,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 665579450}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e09ef2fc27a03e7479acd44842bf89ab, type: 3}
+  m_Script: {fileID: 11500000, guid: ac48bdd626b0bf64db36725a6cb0a136, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   rend: {fileID: 0}
@@ -2780,18 +2668,7 @@ MonoBehaviour:
   zones: {fileID: 3567209}
   pcs:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 717142850}
-        m_MethodName: set_enabled
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!65 &665579453
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3070,17 +2947,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 45950995}
-        m_MethodName: OnPiece
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 692469850}
         m_MethodName: Grab
         m_Mode: 1
@@ -3095,17 +2961,6 @@ MonoBehaviour:
   onManipulationEnded:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 45950995}
-        m_MethodName: NotOnPiece
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 692469850}
         m_MethodName: Release
         m_Mode: 1
@@ -3322,17 +3177,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 45950995}
-        m_MethodName: OnPiece
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 717142847}
         m_MethodName: Grab
         m_Mode: 1
@@ -3347,17 +3191,6 @@ MonoBehaviour:
   onManipulationEnded:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 45950995}
-        m_MethodName: NotOnPiece
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 717142847}
         m_MethodName: Release
         m_Mode: 1
@@ -3505,8 +3338,8 @@ GameObject:
   - component: {fileID: 863144984}
   - component: {fileID: 863144988}
   - component: {fileID: 863144987}
-  - component: {fileID: 863144986}
   - component: {fileID: 863144985}
+  - component: {fileID: 863144986}
   m_Layer: 0
   m_Name: zone 4
   m_TagString: Place_4
@@ -3537,7 +3370,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 863144983}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e09ef2fc27a03e7479acd44842bf89ab, type: 3}
+  m_Script: {fileID: 11500000, guid: ac48bdd626b0bf64db36725a6cb0a136, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   rend: {fileID: 0}
@@ -3546,18 +3379,7 @@ MonoBehaviour:
   zones: {fileID: 3567209}
   pcs:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 931511888}
-        m_MethodName: set_enabled
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!65 &863144986
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3743,17 +3565,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 45950995}
-        m_MethodName: OnPiece
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 931511885}
         m_MethodName: Grab
         m_Mode: 1
@@ -3768,17 +3579,6 @@ MonoBehaviour:
   onManipulationEnded:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 45950995}
-        m_MethodName: NotOnPiece
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 931511885}
         m_MethodName: Release
         m_Mode: 1
@@ -3881,8 +3681,8 @@ GameObject:
   - component: {fileID: 1009967279}
   - component: {fileID: 1009967283}
   - component: {fileID: 1009967282}
-  - component: {fileID: 1009967281}
   - component: {fileID: 1009967280}
+  - component: {fileID: 1009967281}
   m_Layer: 0
   m_Name: zone 3
   m_TagString: Place_3
@@ -3913,7 +3713,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1009967278}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e09ef2fc27a03e7479acd44842bf89ab, type: 3}
+  m_Script: {fileID: 11500000, guid: ac48bdd626b0bf64db36725a6cb0a136, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   rend: {fileID: 0}
@@ -3922,18 +3722,7 @@ MonoBehaviour:
   zones: {fileID: 3567209}
   pcs:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 692469853}
-        m_MethodName: set_enabled
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!65 &1009967281
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4212,17 +4001,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 45950995}
-        m_MethodName: OnPiece
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 1024694222}
         m_MethodName: Grab
         m_Mode: 1
@@ -4237,17 +4015,6 @@ MonoBehaviour:
   onManipulationEnded:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 45950995}
-        m_MethodName: NotOnPiece
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 1024694222}
         m_MethodName: Release
         m_Mode: 1
@@ -4350,8 +4117,8 @@ GameObject:
   - component: {fileID: 1164461905}
   - component: {fileID: 1164461909}
   - component: {fileID: 1164461908}
-  - component: {fileID: 1164461907}
   - component: {fileID: 1164461906}
+  - component: {fileID: 1164461907}
   m_Layer: 0
   m_Name: zone 6
   m_TagString: Place_6
@@ -4382,7 +4149,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1164461904}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e09ef2fc27a03e7479acd44842bf89ab, type: 3}
+  m_Script: {fileID: 11500000, guid: ac48bdd626b0bf64db36725a6cb0a136, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   rend: {fileID: 0}
@@ -4391,18 +4158,7 @@ MonoBehaviour:
   zones: {fileID: 3567209}
   pcs:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1523221665}
-        m_MethodName: set_enabled
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!65 &1164461907
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4567,8 +4323,8 @@ GameObject:
   - component: {fileID: 1430578044}
   - component: {fileID: 1430578048}
   - component: {fileID: 1430578047}
-  - component: {fileID: 1430578046}
   - component: {fileID: 1430578045}
+  - component: {fileID: 1430578046}
   m_Layer: 0
   m_Name: zone 5
   m_TagString: Place_5
@@ -4599,7 +4355,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1430578043}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e09ef2fc27a03e7479acd44842bf89ab, type: 3}
+  m_Script: {fileID: 11500000, guid: ac48bdd626b0bf64db36725a6cb0a136, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   rend: {fileID: 0}
@@ -4608,18 +4364,7 @@ MonoBehaviour:
   zones: {fileID: 3567209}
   pcs:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 434074348}
-        m_MethodName: set_enabled
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!65 &1430578046
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5041,17 +4786,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 45950995}
-        m_MethodName: OnPiece
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 1523221662}
         m_MethodName: Grab
         m_Mode: 1
@@ -5066,17 +4800,6 @@ MonoBehaviour:
   onManipulationEnded:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 45950995}
-        m_MethodName: NotOnPiece
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 1523221662}
         m_MethodName: Release
         m_Mode: 1
@@ -5179,8 +4902,8 @@ GameObject:
   - component: {fileID: 1562924230}
   - component: {fileID: 1562924234}
   - component: {fileID: 1562924233}
-  - component: {fileID: 1562924232}
   - component: {fileID: 1562924231}
+  - component: {fileID: 1562924232}
   m_Layer: 0
   m_Name: zone 9
   m_TagString: Place_9
@@ -5211,7 +4934,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1562924229}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e09ef2fc27a03e7479acd44842bf89ab, type: 3}
+  m_Script: {fileID: 11500000, guid: ac48bdd626b0bf64db36725a6cb0a136, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   rend: {fileID: 0}
@@ -5220,18 +4943,7 @@ MonoBehaviour:
   zones: {fileID: 3567209}
   pcs:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1024694225}
-        m_MethodName: set_enabled
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!65 &1562924232
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5620,17 +5332,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 45950995}
-        m_MethodName: OnPiece
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 1843191894}
         m_MethodName: Grab
         m_Mode: 1
@@ -5645,17 +5346,6 @@ MonoBehaviour:
   onManipulationEnded:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 45950995}
-        m_MethodName: NotOnPiece
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 1843191894}
         m_MethodName: Release
         m_Mode: 1
