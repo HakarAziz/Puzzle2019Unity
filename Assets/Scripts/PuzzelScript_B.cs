@@ -16,6 +16,7 @@ public class PuzzelScript_B : MonoBehaviour
     public GameObject aukfwaduawhdhawidhiuwa;
     public Material hej;
     public Color color;
+    public Rigidbody Rb;
 
     SubtleHints_B subtlehint;
     GameObject Child;
@@ -63,38 +64,28 @@ public class PuzzelScript_B : MonoBehaviour
     {
         hand.Invoke();
         int Nr = Pieces.IndexOf(PieceName);
-        if ((Nr % 2)==0)
-        {
-            Pieces[Nr].transform.position = StartPos[Nr];
-            Pieces[Nr].transform.rotation = Rot[Nr];
-        }
-        else
-        {
-            print("hej");
-        }
-        
+        Pieces[Nr].transform.position = StartPos[Nr];
+        Pieces[Nr].transform.rotation = Rot[Nr];
+ 
+  
     }
 
     public void RightPiece(GameObject PieceName)
     {
         //hand.Invoke();
         print(PieceName);
-        if(PieceName.name=="Piece 2")
-        {
-            int ConnectPiece = Pieces.IndexOf(PieceName) - 1; // Gets index from puzzle piece befor in list
-        }
-        else
-        {
-            int ConnectPiece = Pieces.IndexOf(PieceName) - 2; // Gets index from puzzle piece befor in list
-            Vector3 temp = new Vector3(0.01f, 0, 0);           // Temporary vector that we will add to the new vector
-            PieceName.transform.position = Pieces[ConnectPiece].transform.position;
-            PieceName.transform.position += temp;             // Puzzle piece gets new position
-            PieceName.transform.rotation = Rot[ConnectPiece];
 
-            int CurrentPiece = Pieces.IndexOf(PieceName);
-            Pieces[CurrentPiece].transform.position = PieceName.transform.position; // Updates the current position of the piece
-        }
-        
+        int a = Pieces.IndexOf(PieceName);
+        Rb = Pieces[a].GetComponent<Rigidbody>();
+        int ConnectPiece = Pieces.IndexOf(PieceName) - 3; // Gets index from puzzle piece befor in list
+        Vector3 temp = new Vector3(0.02f, 0, 0);           // Temporary vector that we will add to the new vector
+        PieceName.transform.position = Pieces[ConnectPiece].transform.position;
+        PieceName.transform.position += temp;             // Puzzle piece gets new position
+        PieceName.transform.rotation = Rot[ConnectPiece];
+
+        int CurrentPiece = Pieces.IndexOf(PieceName);
+        Pieces[CurrentPiece].transform.position = PieceName.transform.position; // Updates the current position of the piece
+        Rb.isKinematic = true;
 
         if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Puzzel_b_sub"))
         {

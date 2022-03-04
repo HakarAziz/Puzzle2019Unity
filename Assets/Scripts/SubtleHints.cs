@@ -24,7 +24,7 @@ public class SubtleHints : MonoBehaviour
     IEnumerator Start()
     {
         
-        counter = 2;
+        counter = 3;
         Seeing = true;
         test = false;
         ChangePosVariable = 1.0F;
@@ -45,7 +45,7 @@ public class SubtleHints : MonoBehaviour
     }
     public void CounterIncrease()
     {
-        counter++;
+        counter = counter + 2;
         ChangePosVariable = 1.0F;
     }
 

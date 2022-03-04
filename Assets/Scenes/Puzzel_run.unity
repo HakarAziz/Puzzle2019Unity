@@ -587,7 +587,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 300646471}
   m_LocalRotation: {x: 0, y: 0.7071068, z: -0.7071068, w: 0}
-  m_LocalPosition: {x: 0.017, y: 0.01, z: -0.9}
+  m_LocalPosition: {x: 0.0806, y: 0.01, z: -0.9}
   m_LocalScale: {x: 0.02, y: 0.1, z: 0.012}
   m_Children:
   - {fileID: 96627165}
@@ -807,7 +807,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 367952783}
   m_LocalRotation: {x: 0, y: 0.7071068, z: -0.7071068, w: 0}
-  m_LocalPosition: {x: -0.179, y: 0.01, z: -0.9}
+  m_LocalPosition: {x: -0.2305, y: 0.01, z: -0.9}
   m_LocalScale: {x: 0.02, y: 0.1, z: 0.012}
   m_Children:
   - {fileID: 1044360816}
@@ -857,7 +857,7 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 300646475}
+  constraintsManager: {fileID: 367952787}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
@@ -1120,7 +1120,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 491247960}
   m_LocalRotation: {x: 0, y: 0.7071068, z: -0.7071068, w: 0}
-  m_LocalPosition: {x: -0.126, y: 0.01, z: -0.9}
+  m_LocalPosition: {x: -0.1389, y: 0.01, z: -0.9}
   m_LocalScale: {x: 0.02, y: 0.1, z: 0.012}
   m_Children:
   - {fileID: 1032529124}
@@ -1779,7 +1779,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 622252072}
   m_LocalRotation: {x: 0, y: 0.7071068, z: -0.7071068, w: 0}
-  m_LocalPosition: {x: -0.047, y: 0.01, z: -0.9}
+  m_LocalPosition: {x: -0.0093, y: 0.01, z: -0.9}
   m_LocalScale: {x: 0.02, y: 0.1, z: 0.012}
   m_Children:
   - {fileID: 40697969}
@@ -1829,7 +1829,7 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 300646475}
+  constraintsManager: {fileID: 622252076}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
@@ -3199,7 +3199,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 801405933}
   m_LocalRotation: {x: 0, y: 0.7071068, z: -0.7071068, w: 0}
-  m_LocalPosition: {x: -0.2081, y: 0.01, z: -0.9}
+  m_LocalPosition: {x: -0.2731, y: 0.01, z: -0.9}
   m_LocalScale: {x: 0.02, y: 0.1, z: 0.012}
   m_Children:
   - {fileID: 419726298}
@@ -3605,7 +3605,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 887681148}
   m_LocalRotation: {x: 0, y: 0.7071068, z: -0.7071068, w: 0}
-  m_LocalPosition: {x: -0.151, y: 0.01, z: -0.9}
+  m_LocalPosition: {x: -0.1825, y: 0.01, z: -0.9}
   m_LocalScale: {x: 0.02, y: 0.1, z: 0.012}
   m_Children:
   - {fileID: 540981969}
@@ -5164,7 +5164,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1531371191}
   m_LocalRotation: {x: 0, y: 0.7071068, z: -0.7071068, w: 0}
-  m_LocalPosition: {x: -0.011, y: 0.01, z: -0.9}
+  m_LocalPosition: {x: 0.03, y: 0.01, z: -0.9}
   m_LocalScale: {x: 0.02, y: 0.1, z: 0.012}
   m_Children:
   - {fileID: 872856077}
@@ -6081,6 +6081,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 641394362982409534, guid: 4cdf6dffd67e8434884b2c8fe85da3a5,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 641394363191424522, guid: 4cdf6dffd67e8434884b2c8fe85da3a5,
         type: 3}
       propertyPath: m_RootOrder
@@ -6215,7 +6220,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2013805056}
   m_LocalRotation: {x: 0, y: 0.7071068, z: -0.7071068, w: 0}
-  m_LocalPosition: {x: -0.072, y: 0.01, z: -0.9}
+  m_LocalPosition: {x: -0.0528, y: 0.01, z: -0.9}
   m_LocalScale: {x: 0.02, y: 0.1, z: 0.012}
   m_Children:
   - {fileID: 967739195}
@@ -6533,7 +6538,7 @@ Transform:
   m_GameObject: {fileID: 2037221477}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: -0.209, y: 0.008, z: -1.016}
-  m_LocalScale: {x: 0.02, y: 0.002, z: 0.006}
+  m_LocalScale: {x: 0.02, y: 0.02, z: 0.006}
   m_Children: []
   m_Father: {fileID: 551502563}
   m_RootOrder: 0

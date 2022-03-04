@@ -24,7 +24,7 @@ public class SubtleHints_B : MonoBehaviour
     // Start is called before the first frame update
     IEnumerator Start()
     {
-        counter2 = 3;
+        counter2 = 5;
         counter = 2;
         Seeing = true;
         test = false;
@@ -51,7 +51,7 @@ public class SubtleHints_B : MonoBehaviour
         color = hej.color;
         color.a = ColorIntensity;
         hej.color = color;
-        counter2 = counter2 + 2;
+        counter2 = counter2 + 3;
         counter = counter + 2;
         
         
