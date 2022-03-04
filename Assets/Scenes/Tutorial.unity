@@ -716,7 +716,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6fcd3669348d26d47884f38ad741c450, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UpdateText: {fileID: 1502319879}
+  UpdateText: {fileID: 0}
   counter: 0
   asdf: 0
 --- !u!54 &1078764310

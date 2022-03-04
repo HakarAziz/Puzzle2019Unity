@@ -13,6 +13,7 @@ TagManager:
   - Place_7
   - Place_8
   - Place_9
+  - Trigger_obj
   layers:
   - Default
   - TransparentFX
@@ -22,10 +23,10 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
-  - 
-  - 
+  - EyeTracking
+  - EyeTrackingVis
+  - EyeTrackingCheck
+  - EyeTrackingAccuracy
   - 
   - 
   - 
