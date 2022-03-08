@@ -44,9 +44,20 @@ public class PuzzelScript_B : MonoBehaviour
         {
             subtlehint = aukfwaduawhdhawidhiuwa.GetComponent<SubtleHints_B>();
         }
-        //subtlehint = aukfwaduawhdhawidhiuwa.GetComponent<SubtleHints>();
+        FallDown();
+        
     }
-
+    public void FallDown()
+    {
+        for (int i = 4; i < Pieces.Count; i= i+3)
+        {
+            print(Pieces[i].transform.position.y);
+            if (Pieces[i].transform.position.y < -1) 
+            {
+                Pieces[i].transform.position = StartPos[i];
+            }
+        }
+    }
 
     public void AddPieceInformation()
     {
@@ -54,7 +65,7 @@ public class PuzzelScript_B : MonoBehaviour
         foreach (Transform child in Children)
         {
             Pieces.Add(child.gameObject);
-            print(child);
+            //print(child);
             StartPos.Add(child.transform.position);
             Rot.Add(child.transform.rotation);
         }
@@ -89,7 +100,11 @@ public class PuzzelScript_B : MonoBehaviour
 
         if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Puzzel_b_sub"))
         {
-            subtlehint.CounterIncrease();
+            if(PieceName.name != "Piece 10")
+            {
+                subtlehint.CounterIncrease();
+            }
+            
         }
 
     }

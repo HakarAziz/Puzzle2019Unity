@@ -25,7 +25,7 @@ public class SubtleHints_B : MonoBehaviour
     IEnumerator Start()
     {
         counter2 = 5;
-        counter = 2;
+        counter = 4;
         Seeing = true;
         test = false;
         ChangePosVariable = 1.0F;
@@ -43,6 +43,11 @@ public class SubtleHints_B : MonoBehaviour
     {
         //checkscript = GetComponent<CheckPieceScript>();
     }
+
+    public void StopIT()
+    {
+        StopAllCoroutines();
+    }
     public void CounterIncrease()
     {
         StopAllCoroutines(); //Stops all Coroutines before starting a new one
@@ -52,13 +57,15 @@ public class SubtleHints_B : MonoBehaviour
         color.a = ColorIntensity;
         hej.color = color;
         counter2 = counter2 + 3;
-        counter = counter + 2;
-        
+        if (counter < 28)
+        {
+            counter = counter + 2;
+        }
         
         StartCoroutine(SubtleCube());
     }
 
-    public void NotOnPiece() //Checks when the hand is not on the puzzle piece (may be swapped to eyetracking)
+    public void NotOnPiece_B() //Checks when the hand is not on the puzzle piece (may be swapped to eyetracking)
     {
         if (CheckPieceScript.ThisPiece == Pieces2[counter])
         {
@@ -66,7 +73,6 @@ public class SubtleHints_B : MonoBehaviour
             StartCoroutine(SubtleCube());
             test = false;
             Seeing = true;
-
         }
         else
         {
@@ -74,9 +80,9 @@ public class SubtleHints_B : MonoBehaviour
         }
     }
 
-    public void OnPiece() //Checks when the hand is on the Piece
+    public void OnPiece_B() //Checks when the hand is on the Piece
     {
-
+        print(Pieces2[counter]);
         if (CheckPieceScript.ThisPiece == Pieces2[counter])
         {
             Seeing = false;
