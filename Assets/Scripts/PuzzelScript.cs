@@ -30,12 +30,6 @@ public class PuzzelScript : MonoBehaviour
     void Start()
     {
         AddPieceInformation();
-        //Child = Pieces[7].transform.GetChild(0).gameObject;
-        //hej = Child.GetComponent<Renderer>().material;
-
-
-        //StartCoroutine(SubtleColor());
-
     }
 
     void Update()
@@ -44,9 +38,18 @@ public class PuzzelScript : MonoBehaviour
         {
             subtlehint = aukfwaduawhdhawidhiuwa.GetComponent<SubtleHints>();
         }
-        //subtlehint = aukfwaduawhdhawidhiuwa.GetComponent<SubtleHints>();
+        FallDown();
     }
-
+    public void FallDown()
+    {
+        for (int i = 3; i < Pieces.Count; i = i + 2)
+        {
+            if (Pieces[i].transform.position.y < -1)
+            {
+                Pieces[i].transform.position = StartPos[i];
+            }
+        }
+    }
 
     IEnumerator SubtleColor()
     {
@@ -76,7 +79,6 @@ public class PuzzelScript : MonoBehaviour
         foreach (Transform child in Children)
         {
             Pieces.Add(child.gameObject);
-            print(child);
             StartPos.Add(child.transform.position);
             Rot.Add(child.transform.rotation);
         }
@@ -92,7 +94,6 @@ public class PuzzelScript : MonoBehaviour
 
     public void RightPiece(GameObject PieceName)
     {
-        //hand.Invoke();
         int a = Pieces.IndexOf(PieceName);
         Rb = Pieces[a].GetComponent<Rigidbody>();
         int ConnectPiece = Pieces.IndexOf(PieceName) - 2; // Gets index from puzzle piece befor in list

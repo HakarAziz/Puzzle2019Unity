@@ -5,13 +5,8 @@ using UnityEngine.Events;
 
 public class Trigger_Tutorial : MonoBehaviour
 {
-    // Start is called before the first frame update
     public GameObject pie;
     Tutorial tutorialScript;
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
     void Update()
@@ -26,10 +21,5 @@ public class Trigger_Tutorial : MonoBehaviour
             print("Dom krockade!!!!");
             tutorialScript.Colliding();
         }
-        else 
-        { 
-        
-        }
-
     }
 }

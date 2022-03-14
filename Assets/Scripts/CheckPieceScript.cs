@@ -12,7 +12,6 @@ public class CheckPieceScript : MonoBehaviour
     public void CheckPiece()
     {
         ThisPiece = this.gameObject;
-        //print(sss + "ffiejfijeijfi");
     }
 
     public void Grab()

@@ -21,10 +21,6 @@ public class Tutorial : MonoBehaviour
         Invoke("UpdateText1", 5f);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-    }
 
     public void GrabCube()
     {
@@ -49,7 +45,6 @@ public class Tutorial : MonoBehaviour
         {
             UpdateText.text = "You managed to drop the cube on the plate";
             Invoke("UpdateText1", 2f);
-           
         }
     }
 

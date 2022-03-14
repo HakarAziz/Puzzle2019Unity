@@ -18,12 +18,6 @@ public class Zone_Trigger_B : MonoBehaviour
     [Header("Disable Piece")]
     public UnityEvent pcs;
 
-
-    // Start is called before the first frame update
-    void Start()
-    {
-    }
-
     // Update is called once per frame
     void Update()
     {
@@ -33,13 +27,10 @@ public class Zone_Trigger_B : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        print("före");
         if (CheckPieceScript.grab_object == false)
         {
-            print("efter");
             if (other.tag == gameObject.tag)  //Checks if the correct piece is in the correct spot and deletes the zone
             {
-                print("hej igen");
                 puzzelScript.RightPiece(other.gameObject);
                 gameObject.SetActive(false);
                 inorder.ActivateZones();
@@ -51,11 +42,6 @@ public class Zone_Trigger_B : MonoBehaviour
                 puzzelScript.ChangePos(other.gameObject);
             }
         }
-        else
-        {
-            print("Hoppas att det funkar");
-        }
-
     }
 }
 

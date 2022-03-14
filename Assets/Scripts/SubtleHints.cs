@@ -59,10 +59,6 @@ public class SubtleHints : MonoBehaviour
             Seeing = true;
 
         }
-        else
-        {
-            print("fin print sats");
-        }
     }
 
     public void OnPiece() //Checks when the hand is on the Piece

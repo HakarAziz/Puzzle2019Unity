@@ -11,17 +11,10 @@ public class InOrder : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
-
         ZoneList();
         InactivateZones();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     public void ZoneList()
     {
@@ -29,20 +22,16 @@ public class InOrder : MonoBehaviour
         foreach (Transform child in Children)
         {
             Zones.Add(child.gameObject);
-
         }
-        print(Zones.Count);
     }
 
 
     public void InactivateZones()
     {
-
         for (int i = 2; i <= 9; i++)
         {
             Zones[i].SetActive(false);
         }
-
     }
 
 
