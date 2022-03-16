@@ -943,7 +943,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hostTransform: {fileID: 300646472}
   manipulationType: 3
-  twoHandedManipulationType: 7
+  twoHandedManipulationType: 3
   allowFarManipulation: 1
   useForcesForNearManipulation: 0
   oneHandRotationModeNear: 1
@@ -1196,7 +1196,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hostTransform: {fileID: 367952784}
   manipulationType: 3
-  twoHandedManipulationType: 7
+  twoHandedManipulationType: 3
   allowFarManipulation: 1
   useForcesForNearManipulation: 0
   oneHandRotationModeNear: 1
@@ -1211,7 +1211,7 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 367952787}
+  constraintsManager: {fileID: 300646475}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
@@ -1759,7 +1759,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hostTransform: {fileID: 491247961}
   manipulationType: 3
-  twoHandedManipulationType: 7
+  twoHandedManipulationType: 3
   allowFarManipulation: 1
   useForcesForNearManipulation: 0
   oneHandRotationModeNear: 1
@@ -1774,7 +1774,7 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 491247964}
+  constraintsManager: {fileID: 300646475}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
@@ -2229,7 +2229,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 616701331}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 1}
+  m_LocalPosition: {x: 0, y: -0.348, z: 1.4812}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1771176372}
@@ -2305,7 +2305,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hostTransform: {fileID: 622252073}
   manipulationType: 3
-  twoHandedManipulationType: 7
+  twoHandedManipulationType: 3
   allowFarManipulation: 1
   useForcesForNearManipulation: 0
   oneHandRotationModeNear: 1
@@ -2320,7 +2320,7 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 622252076}
+  constraintsManager: {fileID: 300646475}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
@@ -2651,7 +2651,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hostTransform: {fileID: 715633146}
   manipulationType: 3
-  twoHandedManipulationType: 7
+  twoHandedManipulationType: 3
   allowFarManipulation: 1
   useForcesForNearManipulation: 0
   oneHandRotationModeNear: 1
@@ -2666,7 +2666,7 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 715633149}
+  constraintsManager: {fileID: 300646475}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
@@ -3073,7 +3073,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hostTransform: {fileID: 801405934}
   manipulationType: 3
-  twoHandedManipulationType: 7
+  twoHandedManipulationType: 3
   allowFarManipulation: 1
   useForcesForNearManipulation: 0
   oneHandRotationModeNear: 1
@@ -3088,7 +3088,7 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 801405937}
+  constraintsManager: {fileID: 300646475}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
@@ -3419,7 +3419,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hostTransform: {fileID: 887681149}
   manipulationType: 3
-  twoHandedManipulationType: 7
+  twoHandedManipulationType: 3
   allowFarManipulation: 1
   useForcesForNearManipulation: 0
   oneHandRotationModeNear: 1
@@ -3434,7 +3434,7 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 887681152}
+  constraintsManager: {fileID: 300646475}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
@@ -5192,7 +5192,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hostTransform: {fileID: 1531371192}
   manipulationType: 3
-  twoHandedManipulationType: 7
+  twoHandedManipulationType: 3
   allowFarManipulation: 1
   useForcesForNearManipulation: 0
   oneHandRotationModeNear: 1
@@ -5207,7 +5207,7 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 1531371195}
+  constraintsManager: {fileID: 300646475}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
@@ -5626,7 +5626,12 @@ PrefabInstance:
     - target: {fileID: 1305400959061624163, guid: e969038e4d67d9b498de2ef538969506,
         type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1363161809169529336, guid: e969038e4d67d9b498de2ef538969506,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1551023945204848196, guid: e969038e4d67d9b498de2ef538969506,
         type: 3}
@@ -5746,12 +5751,12 @@ PrefabInstance:
     - target: {fileID: 5201862997053450832, guid: e969038e4d67d9b498de2ef538969506,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.2
+      value: -0.196
       objectReference: {fileID: 0}
     - target: {fileID: 5201862997053450832, guid: e969038e4d67d9b498de2ef538969506,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.18
+      value: 0.723
       objectReference: {fileID: 0}
     - target: {fileID: 5201862997053450832, guid: e969038e4d67d9b498de2ef538969506,
         type: 3}
@@ -6581,7 +6586,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hostTransform: {fileID: 2013805057}
   manipulationType: 3
-  twoHandedManipulationType: 7
+  twoHandedManipulationType: 3
   allowFarManipulation: 1
   useForcesForNearManipulation: 0
   oneHandRotationModeNear: 1
@@ -6596,7 +6601,7 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 2013805060}
+  constraintsManager: {fileID: 300646475}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
@@ -7040,7 +7045,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2145281749}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -0.35, z: 0.5}
   m_LocalScale: {x: 0.5, y: 0.4, z: 0.01}
   m_Children: []
   m_Father: {fileID: 0}

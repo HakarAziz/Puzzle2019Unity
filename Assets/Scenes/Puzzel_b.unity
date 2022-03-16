@@ -755,7 +755,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hostTransform: {fileID: 214106621}
   manipulationType: 3
-  twoHandedManipulationType: 7
+  twoHandedManipulationType: 3
   allowFarManipulation: 1
   useForcesForNearManipulation: 0
   oneHandRotationModeNear: 1
@@ -1068,7 +1068,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hostTransform: {fileID: 312542651}
   manipulationType: 3
-  twoHandedManipulationType: 7
+  twoHandedManipulationType: 3
   allowFarManipulation: 1
   useForcesForNearManipulation: 0
   oneHandRotationModeNear: 1
@@ -2004,7 +2004,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 616701331}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 1}
+  m_LocalPosition: {x: 0, y: -0.3513, z: 1.48}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1513767352}
@@ -3402,7 +3402,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hostTransform: {fileID: 1261314141}
   manipulationType: 3
-  twoHandedManipulationType: 7
+  twoHandedManipulationType: 3
   allowFarManipulation: 1
   useForcesForNearManipulation: 0
   oneHandRotationModeNear: 1
@@ -3715,7 +3715,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hostTransform: {fileID: 1324337872}
   manipulationType: 3
-  twoHandedManipulationType: 7
+  twoHandedManipulationType: 3
   allowFarManipulation: 1
   useForcesForNearManipulation: 0
   oneHandRotationModeNear: 1
@@ -4078,7 +4078,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hostTransform: {fileID: 1471666118}
   manipulationType: 3
-  twoHandedManipulationType: 7
+  twoHandedManipulationType: 3
   allowFarManipulation: 1
   useForcesForNearManipulation: 0
   oneHandRotationModeNear: 1
@@ -4444,7 +4444,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hostTransform: {fileID: 1623595545}
   manipulationType: 3
-  twoHandedManipulationType: 7
+  twoHandedManipulationType: 3
   allowFarManipulation: 1
   useForcesForNearManipulation: 0
   oneHandRotationModeNear: 1
@@ -4775,7 +4775,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hostTransform: {fileID: 1674383246}
   manipulationType: 3
-  twoHandedManipulationType: 7
+  twoHandedManipulationType: 3
   allowFarManipulation: 1
   useForcesForNearManipulation: 0
   oneHandRotationModeNear: 1
@@ -5148,7 +5148,12 @@ PrefabInstance:
     - target: {fileID: 1305400959061624163, guid: e969038e4d67d9b498de2ef538969506,
         type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1363161809169529336, guid: e969038e4d67d9b498de2ef538969506,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1551023945204848196, guid: e969038e4d67d9b498de2ef538969506,
         type: 3}
@@ -5268,12 +5273,12 @@ PrefabInstance:
     - target: {fileID: 5201862997053450832, guid: e969038e4d67d9b498de2ef538969506,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.2
+      value: -0.203
       objectReference: {fileID: 0}
     - target: {fileID: 5201862997053450832, guid: e969038e4d67d9b498de2ef538969506,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.18
+      value: 0.755
       objectReference: {fileID: 0}
     - target: {fileID: 5201862997053450832, guid: e969038e4d67d9b498de2ef538969506,
         type: 3}
@@ -6153,7 +6158,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hostTransform: {fileID: 1951085257}
   manipulationType: 3
-  twoHandedManipulationType: 7
+  twoHandedManipulationType: 3
   allowFarManipulation: 1
   useForcesForNearManipulation: 0
   oneHandRotationModeNear: 1
@@ -6506,7 +6511,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hostTransform: {fileID: 2084131482}
   manipulationType: 3
-  twoHandedManipulationType: 7
+  twoHandedManipulationType: 3
   allowFarManipulation: 1
   useForcesForNearManipulation: 0
   oneHandRotationModeNear: 1
@@ -6718,7 +6723,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2145281749}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -0.35, z: 0.5}
   m_LocalScale: {x: 0.5, y: 0.4, z: 0.01}
   m_Children: []
   m_Father: {fileID: 0}
