@@ -16,14 +16,15 @@ public class SubtleHints : MonoBehaviour
     public List<Quaternion> Rot2 = new List<Quaternion>();
 
     PuzzelScript puzzelScript; //imports the puzzelScript
-    CheckPieceScript checkscript; 
+    CheckPieceScript checkscript;
+    ARETT.DataProvider dataprovider;
 
 
 
     // Start is called before the first frame update
     IEnumerator Start()
     {
-        
+        print(ARETT.DataProvider.ObjectHit);
         counter = 3;
         Seeing = true;
         test = false;
@@ -64,15 +65,15 @@ public class SubtleHints : MonoBehaviour
     public void OnPiece() //Checks when the hand is on the Piece
     {
 
-        if (CheckPieceScript.ThisPiece == Pieces2[counter]) 
+        if (CheckPieceScript.ThisPiece == Pieces2[counter])
         {
             Seeing = false;
-            
+
         }
         else
         {
             Seeing = true;
-            
+
         }
 
 

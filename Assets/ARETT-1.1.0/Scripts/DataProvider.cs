@@ -14,6 +14,7 @@ namespace ARETT
 	/// </summary>
 	public class DataProvider : MonoBehaviour
 	{
+		public static String ObjectHit;
 		#region Configuration
 		[Header("Configuration")]
 		/// <summary>
@@ -479,6 +480,7 @@ namespace ARETT
 
 						// Check if the gaze hits a AOI
 						gazeData.GazePointAOIHit = Physics.Raycast(gazeRay, out hitInfo, Mathf.Infinity, eyeTrackingAOILayerMask);
+						ObjectHit = gazeData.GazePointName;
 
 						// If we hit an AOI, write the hit info to data, otherwise simply leave it empty
 						if (gazeData.GazePointAOIHit)
