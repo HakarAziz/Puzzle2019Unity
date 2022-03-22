@@ -42,6 +42,10 @@ public class SubtleHints : MonoBehaviour
     }
     void Update()
     {
+        for(int i = 3; i<Pieces2.Count; i= i+2)
+        {
+            StartPos2[i] = Pieces2[i].transform.position;
+        }
         //checkscript = GetComponent<CheckPieceScript>();
     }
     public void CounterIncrease()
@@ -82,40 +86,35 @@ public class SubtleHints : MonoBehaviour
     IEnumerator SubtleMove() //The SubtleMove method, moves the piece a little bit after some seconds
     {
 
-        StartPos2[counter] = Pieces2[counter].transform.position;
-        yield return new WaitForSeconds(5);
+        
+        yield return new WaitForSeconds(0);
         while (Seeing == true)
         {
-            if (ChangePosVariable == 1.0F) //starts the subtlehint after 3 seconds
+            
+
+            if (Seeing == false)
             {
-                ChangePosVariable = ChangePosVariable + 0.001F; //increases the ChangePosVariable for the movement
-                yield return new WaitForSeconds(3); //after 3 seconds and then returns every element only once
+                break;
             }
             else
             {
+                Pieces2[counter].transform.position = ChangePosVariable * StartPos2[counter]; //Moves the piece 
+                Pieces2[counter].transform.rotation = Rot2[counter];
+
+                yield return new WaitForSeconds(1);
                 if (Seeing == false)
                 {
                     break;
                 }
                 else
                 {
-                    Pieces2[counter].transform.position = ChangePosVariable * StartPos2[counter]; //Moves the piece 
+                    Pieces2[counter].transform.position = StartPos2[counter]; //Moves the piece to the start position
                     Pieces2[counter].transform.rotation = Rot2[counter];
-
-                    yield return new WaitForSeconds(1);
-                    if (Seeing == false)
-                    {
-                        break;
-                    }
-                    else
-                    {
-                        Pieces2[counter].transform.position = StartPos2[counter]; //Moves the piece to the start position
-                        Pieces2[counter].transform.rotation = Rot2[counter];
-                        ChangePosVariable = ChangePosVariable + 0.001F;
-                        yield return new WaitForSeconds(4);
-                    }
+                    ChangePosVariable = ChangePosVariable + 0.001F;
+                    yield return new WaitForSeconds(3);
                 }
             }
+            
 
         }
     }

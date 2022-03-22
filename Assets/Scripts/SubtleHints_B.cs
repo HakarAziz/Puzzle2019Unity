@@ -40,6 +40,7 @@ public class SubtleHints_B : MonoBehaviour
     }
     void Update()
     {
+
     }
 
     public void StopIT()
@@ -94,38 +95,31 @@ public class SubtleHints_B : MonoBehaviour
     IEnumerator SubtleCube() //The SubtleCube method, moves the piece a little bit after some seconds
     {
         hej = Pieces2[counter2].GetComponent<Renderer>().material;
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(0);
         while (Seeing == true)
         {
-            if (ChangePosVariable == 1.0F) //starts the subtlehint after 3 seconds
+            if (Seeing == false)
             {
-                ChangePosVariable = ChangePosVariable + 0.001F; //increases the ChangePosVariable for the movement
-                yield return new WaitForSeconds(3); //after 3 seconds and then returns every element only once
+                break;
             }
             else
             {
+                color = hej.color;
+                color.a = ColorIntensity;
+                hej.color = color;
+
+                yield return new WaitForSeconds(1);
                 if (Seeing == false)
                 {
                     break;
                 }
                 else
                 {
-                    color = hej.color;
-                    color.a = ColorIntensity;
-                    hej.color = color;
-
-                    yield return new WaitForSeconds(1);
-                    if (Seeing == false)
-                    {
-                        break;
-                    }
-                    else
-                    {
-                        ColorIntensity = ColorIntensity + 0.1F;
-                        yield return new WaitForSeconds(4);
-                    }
+                    ColorIntensity = ColorIntensity + 0.1F;
+                    yield return new WaitForSeconds(4);
                 }
             }
+            
 
         }
     }

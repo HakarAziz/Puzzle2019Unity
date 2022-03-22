@@ -14,12 +14,9 @@ public class PuzzelScript : MonoBehaviour
     public float intensity;
     public float ColorIntensity;
     public GameObject aukfwaduawhdhawidhiuwa;
-    public Material hej;
-    public Color color;
     public Rigidbody Rb;
 
     SubtleHints subtlehint;
-    GameObject Child;
 
 
     [Header("Disable handgrab")]
@@ -34,7 +31,7 @@ public class PuzzelScript : MonoBehaviour
 
     void Update()
     {
-        if(SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Puzzel_run_sub"))
+        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Puzzel_run_sub"))
         {
             subtlehint = aukfwaduawhdhawidhiuwa.GetComponent<SubtleHints>();
         }
@@ -51,26 +48,7 @@ public class PuzzelScript : MonoBehaviour
         }
     }
 
-    IEnumerator SubtleColor()
-    {
-        while (true)
-        {
-            if (intensity == 1.0F)
-            {
-                intensity = intensity + 0.001F;
-                yield return new WaitForSeconds(5);
-            }
-            else
-            {
-                color = hej.color;
-                color.a = ColorIntensity;
-                hej.color = color;
-                yield return new WaitForSeconds(1);
-                ColorIntensity = ColorIntensity + 0.1F;
-                yield return new WaitForSeconds(3);
-            }
-        }
-    }
+    
 
 
     public void AddPieceInformation()
