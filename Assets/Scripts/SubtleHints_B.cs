@@ -47,6 +47,16 @@ public class SubtleHints_B : MonoBehaviour
     {
         StopAllCoroutines();
     }
+    public void Stopguide()
+    {
+        /*if (CheckPieceScript.ThisPiece == Pieces2[counter])
+        {
+            StopAllCoroutines();
+            color.a = ColorIntensity;
+            StartCoroutine(SubtleCube());
+        }*/
+
+    }
     public void CounterIncrease()
     {
         StopAllCoroutines(); //Stops all Coroutines before starting a new one
@@ -68,6 +78,7 @@ public class SubtleHints_B : MonoBehaviour
     {
         if (CheckPieceScript.ThisPiece == Pieces2[counter])
         {
+            
             StopAllCoroutines(); //Stops all Coroutines before starting a new one
             StartCoroutine(SubtleCube());
             test = false;
@@ -77,16 +88,16 @@ public class SubtleHints_B : MonoBehaviour
 
     public void OnPiece_B() //Checks when the hand is on the Piece
     {
-        print(Pieces2[counter]);
         if (CheckPieceScript.ThisPiece == Pieces2[counter])
         {
             Seeing = false;
+            
 
         }
         else
         {
             Seeing = true;
-
+            
         }
 
 
@@ -100,6 +111,7 @@ public class SubtleHints_B : MonoBehaviour
         {
             if (Seeing == false)
             {
+
                 break;
             }
             else
