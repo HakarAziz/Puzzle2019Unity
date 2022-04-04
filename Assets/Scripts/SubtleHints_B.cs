@@ -116,7 +116,7 @@ public class SubtleHints_B : MonoBehaviour
                 else
                 {
                     ColorIntensity = ColorIntensity + 0.1F;
-                    yield return new WaitForSeconds(4);
+                    yield return new WaitForSeconds(3);
                 }
             }
             

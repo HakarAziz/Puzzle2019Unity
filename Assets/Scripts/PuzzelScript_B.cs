@@ -35,7 +35,7 @@ public class PuzzelScript_B : MonoBehaviour
 
     void Update()
     {
-        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Puzzel_B_sub"))
+        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Puzzel_B_sub")|| SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Puzzel_run_sub"))
         {
             subtlehint = aukfwaduawhdhawidhiuwa.GetComponent<SubtleHints_B>();
         }
@@ -89,7 +89,7 @@ public class PuzzelScript_B : MonoBehaviour
         Pieces[CurrentPiece].transform.position = PieceName.transform.position; // Updates the current position of the piece
         Rb.isKinematic = true;
 
-        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Puzzel_b_sub"))
+        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Puzzel_b_sub")|| SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Puzzel_run_sub"))
         {
             if(PieceName.name != "Piece 10")
             {
