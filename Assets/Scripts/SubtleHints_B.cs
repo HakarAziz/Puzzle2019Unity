@@ -49,12 +49,15 @@ public class SubtleHints_B : MonoBehaviour
     }
     public void Stopguide()
     {
-        /*if (CheckPieceScript.ThisPiece == Pieces2[counter])
+        if (CheckPieceScript.ThisPiece == Pieces2[counter2-1])
         {
             StopAllCoroutines();
+            ColorIntensity = 0F;
+            color = hej.color;
             color.a = ColorIntensity;
+            hej.color = color;
             StartCoroutine(SubtleCube());
-        }*/
+        }
 
     }
     public void CounterIncrease()
